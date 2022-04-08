@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  position: relative;
+}
+
+main header {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+main header nav.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main header nav.navbar .container {
+  /* background-color: deepskyblue; */
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header nav.navbar .container a.navbar-brand {
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+  padding: 5px;
+}
+
+main header nav.navbar .container a.navbar-brand img.logo {
+  width: 200px;
+}
+
+main header nav.navbar .container .navbar-menu {
+  -webkit-box-flex: 90%;
+      -ms-flex: 90%;
+          flex: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #800008;
+  height: 3em;
+  border-radius: 20px;
+}
+
+main header nav.navbar .container .navbar-menu ul.navbar-nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header nav.navbar .container .navbar-menu ul.navbar-nav li.nav-item {
+  /* margin-left: 2em; */
+}
+
+main header nav.navbar .container .navbar-menu ul.navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+main header nav.navbar .container .navbar-menu ul.navbar-nav li.nav-item:not(:first-child) {
+  margin-left: 2em;
+}
+
+main header nav.navbar .contact {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2em;
+}
+
+main header nav.navbar .contact a {
+  background-color: #3EE23E;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: .8em 1.4em .8em 1.4em;
+}
+
+main header img.sun {
+  position: absolute;
+  right: -10%;
+  top: -30%;
+  max-width: 50%;
+  z-index: -1;
+}
+
+main .portada {
+  height: 100vh;
+  padding-top: 6em;
+  /* background-color: $orange; */
+}
+
+main .portada .row {
+  background-image: url(../images/sunlogo.svg);
+  background-repeat: no-repeat;
+  background-position-x: -73%;
+  background-position-y: -55%;
+  background-size: 60%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .portada .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .portada .row .col-text {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  /* background-color: cyan; */
+}
+
+main .portada .row .col-text .content {
+  /* background-color: deeppink; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 60%;
+  /* align-items: center; */
+}
+
+main .portada .row .col-text .content h1 {
+  font-size: 4em;
+  color: #800008;
+  text-transform: uppercase;
+}
+
+main .portada .row .col-img {
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  position: relative;
+  border-radius: 50%;
+  z-index: 2;
+  /* border: 1px dashed #fff; */
+  /* background-color: deepskyblue; */
+}
+
+main .portada .row .col-img img.cbba {
+  max-width: 550px;
+}
+
+main .portada .row .col-img .edu {
+  position: absolute;
+  left: 20%;
+  bottom: 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  /* border-top-left-radius: 15px;
+                    border-top-right-radius: 15px; */
+  border-radius: 50%;
+  /* max-width: 110px; */
+  /* padding: 1em; */
+}
+
+main .portada .row .col-img .edu img.concord {
+  width: 80px;
+}
+
+main .portada .row .col-img .edu p {
+  padding-top: 1em;
+  color: #fff;
+  text-align: center;
+  font-size: .6em;
+}
+
+main .circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 87%;
+  background: #F8AD1D;
+  -webkit-clip-path: circle(640px at right 100px);
+          clip-path: circle(640px at right 100px);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.cbba {
+  max-width: 400px;
+}
+
+.bg-light {
+  background-color: #f8f9fa00 !important;
+}
+/*# sourceMappingURL=styles.css.map */

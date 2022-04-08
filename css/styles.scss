@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;    
+}
+
+
+
+@import "variables";
+
+
+main{
+    position: relative;
+    header{
+        position: absolute;
+        top: 2%;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        nav.navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .container{
+                /* background-color: deepskyblue; */
+                flex: 80%;
+                display: flex;
+                padding-left: 2em;
+                justify-content: flex-start;
+                align-items: center;
+                a.navbar-brand{
+                    flex: 10%;
+                    padding: 5px;
+                    img.logo{
+                        width: 200px;
+                    }
+                }
+    
+                .navbar-menu{
+                    flex: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $brownred;
+                    height: 3em;
+                    border-radius: 20px;
+                    ul.navbar-nav{
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        li.nav-item{
+                            /* margin-left: 2em; */
+                            a.nav-link{
+                                color: #fff;
+                                font-weight: 500;
+                            }
+                        }
+    
+                        li.nav-item:not(:first-child) {
+                            margin-left: 2em;
+                        }
+                        
+                    }
+                }
+            }
+    
+            .contact{
+                flex: 20%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 2em;
+                a{
+                    background-color: $green;
+                    color: #fff;
+                    font-weight: 600;
+                    border-radius: 20px;
+                    padding: .8em 1.4em .8em 1.4em;
+                }
+            }
+        }
+    
+        img.sun{
+            position: absolute;
+            right: -10%;
+            top: -30%;
+            max-width: 50%;
+            z-index: -1;
+        }
+    }
+    .portada{
+        height: 100vh;
+        padding-top: 6em;
+        /* background-color: $orange; */
+
+        .row{
+            background-image: url(../images/sunlogo.svg);
+            background-repeat: no-repeat;
+            background-position-x: -73%;
+            background-position-y: -55%;
+            background-size: 60%;
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .col{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .col-text{
+                flex: 45%;
+                /* background-color: cyan; */
+                .content{
+                    /* background-color: deeppink; */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 60%;
+                    /* align-items: center; */
+                    h1{
+                        font-size: 4em;
+                        color: $brownred;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .col-img{
+                flex: 55%;
+                position: relative;
+                border-radius: 50%;
+                z-index: 2;
+                /* border: 1px dashed #fff; */
+
+                img.cbba{
+                    max-width: 550px;
+                }
+
+                /* background-color: deepskyblue; */
+                .edu{
+                    position: absolute;
+                    left: 20%;
+                    bottom: 13%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #fff;
+                    /* border-top-left-radius: 15px;
+                    border-top-right-radius: 15px; */
+                    border-radius: 50%;
+                    /* max-width: 110px; */
+                    /* padding: 1em; */
+                    img.concord{
+                        width: 80px;
+                    }
+                    p{
+                        padding-top: 1em;
+                        color: #fff;
+                        text-align: center;
+                        font-size: .6em;
+                    }
+
+                }
+            }
+        }    
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 87%;
+        background: $orange;
+        clip-path: circle(640px at right 100px);
+        z-index: 1;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+img.cbba{
+    max-width: 400px;
+}
+
+.bg-light {
+    background-color: #f8f9fa00!important;
+}
+
