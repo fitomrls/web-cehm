@@ -27,10 +27,6 @@ main{
             .menu{
                 display: flex;
                 justify-content: space-between;
-                /* align-items: center; */
-                background-color: $orange;
-                padding: 10px 5px 5px 15px;
-                border-radius: 35px;
     
                 a.logo{
                     padding-right: 2em;
@@ -43,6 +39,10 @@ main{
                     list-style: none;
                     display: flex;
                     margin-right: 1em;
+                    background-color: $orange;
+                    padding: 10px 15px 5px 15px;
+                    border-radius: 35px;
+
                     li{
                         color: $orange;
                         a{
@@ -271,27 +271,26 @@ main{
                 width: 80%;
                 position: absolute;
                 bottom: -28%;
-                left: 8%;
+                left: 8%;                
                 /* height: 190px; */
                 /* padding-left: 3em;
                 padding-right: 3em; */
                 .content{
                     width: 100%;
-                    background-color: $green;
+                    /* background-color: $green; */
                     border-radius: 20px;
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 2em;
                     height: 160px;
-                    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
                     .box-info{
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        padding: 4px;
+                        padding: 1.5em;
                         /* text-shadow: $black 1px 1px 0px; */
                         color: #fff;
                         h3{
@@ -301,6 +300,22 @@ main{
                         p{
                             font-size: 1em;
                         }
+                    }
+
+                    .vision{
+                        background-color: $green;
+                        color: $black;
+                        border-top-left-radius: 25px;
+                        border-bottom-left-radius: 25px;
+                    }
+                    .mision{
+                        background-color: $orange;
+                        color: $black;
+                    }
+                    .filo{
+                        background-color: $brownred;
+                        border-top-right-radius: 25px;
+                        border-bottom-right-radius: 25px;
                     }
                 }
             }
