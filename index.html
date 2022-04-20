@@ -29,14 +29,14 @@
                           <li>
                               <a href="#">Nuestro Sueño &dtrif;</a>
                                 <ul class="dropdown">
-                                <li><a href="#">Visi&oacute;n</a></li>
-                                <li><a href="#">Misi&oacute;n</a></li>
-                                <li><a href="#">Valores</a></li>
-                                <li><a href="#">Pol&iacute;tica de Protecci&oacute;n</a></li>
+                                <li><a href="#" v-scroll-to="{el: '#mision'}">Visi&oacute;n</a></li>
+                                <li><a href="#" v-scroll-to="{el: '#vision'}">Misi&oacute;n</a></li>
+                                <li><a href="#" v-scroll-to="{el: '#valores'}">Valores</a></li>
+                                <li><a href="#" v-scroll-to="{el: '#proteccion'}">Pol&iacute;tica de Protecci&oacute;n</a></li>
                                 </ul>
                           </li>
                           <li>
-                              <a href="#">&Aacute;reas de Acci&oacute;n &dtrif;</a>
+                              <a href="areas-accion.html">&Aacute;reas de Acci&oacute;n &dtrif;</a>
                                 <ul class="dropdown">
                                 <li><a href="#">Desarrollo Personal</a></li>
                                 <li><a href="#">Acompañamiento Familiar</a></li>
@@ -61,7 +61,7 @@
                 
                 <a href="#" class="contact">
                     <img src="images/flagbol.svg" alt="flag bolivia">
-                    Voluntariado
+                    &Uacute;nete
                 </a>                
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <div class="text">
                     <img class="logo-cehm" src="images/logo.svg" alt="logo-cehm">
                     <p>
-                        Acompañando a niños, niñas y adolescentes trabajadores de Cochabamba, desde el 2009 para que tengan una vida digna.
+                        Construyendo de sueños desde 2009
                     </p>
                     <a class="cta" href="#"  v-scroll-to="{el: '#info'}">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -82,7 +82,6 @@
                     </a>
                 </div>
                 <div class="img-b">
-                    <p>"Tengan ánimo la buena semilla crecerá más adelante en el corazón de los jóvenes." <br> Edmundo Rice</p>
                 </div>
             </div>
         </header>
@@ -95,11 +94,6 @@
                     <p>
                         El Centro Hermano Manolo (CEHM) es una organización sin fines de lucro, dependiente de la Congregación de Hermanos Cristianos. Acompañamos a niños, niñas y adolescentes trabajadores (NNATs) del sector de La Cancha, en Cochabamba.
                     </p>
-  
-                    <!-- <div class="cta">
-                        <a class="btn btn-large" href="">Donate now</a>
-                        <a href="">Discover | </a>
-                    </div> -->
                   </div>
                 </div>
                 <div class="col col-img">
@@ -107,20 +101,27 @@
                     <div class="edu">
                       <img class="concord" src="images/cristocon.svg" alt="cristo concordia cbba">
                     </div>
+                    <p class="frase">
+                        "Tengan animo y fe la buena semilla crecerá más tarde en el corazón de los jóvenes" <br> Edmundo Rice
+                    </p>
                 </div>
                 <div class="info" id="info">
                     <div class="content">
-                        <div class="box-info vision">
+                        <div class="box-info vision" id="mision">
                             <h3>Nuestra Visión</h3>
                             <p>Nuestra visión es que los NNATs tengan una vida digna. Buscamos que los niños, niñas y adolescentes trabajadores tengan un ambiente comunitario, donde desarrollen sus habilidades progresivamente y sean protagonistas de su futuro.</p>
                         </div>                    
-                        <div class="box-info mision">
+                        <div class="box-info mision" id="vision">
                             <h3>Nuestra Misión</h3>
                             <p>Nuestra visión es que los NNATs tengan una vida digna. Buscamos que los niños, niñas y adolescentes trabajadores tengan un ambiente comunitario, donde desarrollen sus habilidades progresivamente y sean protagonistas de su futuro.</p>
                         </div>
-                        <div class="box-info filo">
-                            <h3>Nuestra Filosofía</h3>
-                            <p>Nuestra visión es que los NNATs tengan una vida digna. Buscamos que los niños, niñas y adolescentes trabajadores tengan un ambiente comunitario, donde desarrollen sus habilidades progresivamente y sean protagonistas de su futuro.</p>
+                        <div class="box-info filo" id="valores">
+                            <h3>Nuestros Valores</h3>
+                            <ul>
+                                <li>Presencia</li>
+                                <li>Compasi&oacute;n</li>
+                                <li>Liberaci&oacute;n</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -144,34 +145,38 @@
                     </div>
                 </div>
                 <div class="boxes-area">
-                    <div class="box">
+                    <a class="box" href="#">
                         <div class="icon">
                             <img class="icon-img" src="images/icons/personal.svg" alt="">
                         </div>
-                        <h3>Desarrollo Personal</h3>
-                        <p>El área de desarrollo personal está enfocada en el fortalecimiento de las habilidades sociales de los NNATs como parte del desarrollo personal, a través de las diferentes actividades socio-educativas lúdicas, donde los NNATs sean los protagonistas en el cambio y transformación personal que les permite generar nuevas actitudes en sus relaciones interpersonales y sociales.</p>
-                    </div>
-                    <div class="box">
+                        <h3>
+                            Desarrollo Personal
+                        </h3>
+                    </a>
+                    <a class="box" href="#">
                         <div class="icon">
                             <img class="icon-img" src="images/icons/book.svg" alt="">
                         </div>
-                        <h3>Fortalecimiento Educativo</h3>
-                        <p>En el área de fortalecimiento educativo se busca incrementar interés y desempeño educativo en los NNATs. Promoviendo el desarrollo de sus habilidades y estrategias de aprendizaje. Para lo cual se realizan visitas a las unidades educativas donde los NNATs estudian, con la finalidad de averiguar su rendimiento académico y así motivar en su proceso de aprendizaje.</p>
-                    </div>
-                    <div class="box">
+                        <h3>
+                            Fortalecimiento Educativo
+                        </h3>
+                    </a>
+                    <a class="box" href="#">
                         <div class="icon">
                             <img class="icon-img" src="images/icons/family.svg" alt="">
                         </div>
-                        <h3>Acompañamiento Familiar</h3>
-                        <p>En el área de acompañamiento familiar buscamos generar las relaciones armoniosas y el protagonismo de los padres en el crecimiento integral de sus hijos/as, con el fin de garantizar la protección y bienestar de los NNATs y a fomentar un ambiente comunitario más armonioso en el entorno familiar.</p>
-                    </div>
-                    <div class="box">
+                        <h3>
+                            Acompañamiento Familiar
+                        </h3>
+                    </a>
+                    <a class="box" href="#">
                         <div class="icon">
                             <img class="icon-img" src="images/icons/tech.svg" alt="">
                         </div>
-                        <h3>Promoción en Capacitación Técnica</h3>
-                        <p>En esta área el objetivo es promover la formación técnica según sus capacidades, con vista a que los adolescentes mayores de 14 años se formen de manera eficiente y puedan acceder a espacios laborales más dignos; al mismo tiempo puedan continuar con los estudios superiores.</p>
-                    </div>
+                        <h3>
+                            Promoción en Capacitación Técnica
+                        </h3>
+                    </a>
                 </div>
             </div>
         </section>
@@ -338,7 +343,7 @@
       },
             },
         })
-      </script>
+    </script>
 
 </body>
 </html>
