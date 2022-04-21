@@ -40,7 +40,7 @@ main .nav-menu .nav-content .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75%;
+  width: 100%;
 }
 
 main .nav-menu .nav-content .menu a.logo {
@@ -360,14 +360,15 @@ main .about .row .col-text .content {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 60%;
+  width: 70%;
 }
 
 main .about .row .col-text .content h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #303030;
   text-shadow: #dbdada 1px 1px 0px;
   text-transform: uppercase;
+  padding-bottom: 1em;
 }
 
 main .about .row .col-text .content p {
@@ -467,9 +468,9 @@ main .about .row .info .content .box-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -483,7 +484,7 @@ main .about .row .info .content .box-info {
   -webkit-box-flex: 33.3%;
       -ms-flex: 33.3%;
           flex: 33.3%;
-  height: 10em;
+  height: 12em;
 }
 
 main .about .row .info .content .box-info h3 {
@@ -592,8 +593,10 @@ main .areas .content .text-area .col {
 }
 
 main .areas .content .text-area .col h1 {
-  font-weight: 500;
-  font-size: 3em;
+  /* font-weight: 500; */
+  color: #303030;
+  font-size: 2.5em;
+  text-transform: uppercase;
   padding-bottom: .7em;
   text-shadow: #fff 1px 1px 0px;
 }
@@ -918,16 +921,37 @@ main footer .content .col .social ul li:not(:first-child) {
 
 main footer .content .horario {
   color: #F8AD1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 main footer .content .horario .center {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main footer .content .horario .center h3 {
+  font-weight: 500;
+  font-size: 1em;
 }
 
 main footer .content .horario p {
@@ -1006,7 +1030,7 @@ main .dpersonal {
 main .dpersonal .content {
   position: relative;
   height: 500px;
-  width: 70%;
+  width: 75%;
   /* border: solid 2px #ccc; */
 }
 
@@ -1038,6 +1062,7 @@ main .dpersonal .content .uno .title {
 main .dpersonal .content .uno .title h1 {
   font-size: 3em;
   font-weight: 500;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -1135,6 +1160,8 @@ main .fedu .fedu-left h1 {
   font-size: 3em;
   font-weight: 500;
   color: #fff;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 main .fedu .fedu-right {
@@ -1158,8 +1185,8 @@ main .fedu .fedu-right {
 }
 
 main .fedu .fedu-right p {
-  width: 100%;
   color: #303030;
+  text-align: center;
 }
 
 main .afamiliar {
@@ -1267,10 +1294,11 @@ main .afamiliar .text .text-content h1 {
   font-size: 3em;
   font-weight: 500;
   color: #fff;
+  text-transform: uppercase;
 }
 
 main .afamiliar .text .text-content p {
-  width: 90%;
+  width: 100%;
   color: #303030;
 }
 
@@ -1331,8 +1359,23 @@ main .cap .content .right {
           align-items: center;
 }
 
+main .cap .content .right .text h1 {
+  font-size: 3em;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: #6b6868 1px 1px 0px;
+  text-transform: uppercase;
+}
+
 main .cap .content .right .text p {
-  width: 60%;
+  width: 80%;
+}
+
+.text-gradient {
+  background-color: #F8AD1D;
+  background: radial-gradient(circle farthest-side at center center, #F8AD1D 54%, #3EE23E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a {

@@ -27,7 +27,7 @@ main{
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                width: 75%;
+                width: 100%;
                 a.logo{
                     z-index: 5;
                     img{
@@ -281,12 +281,13 @@ main{
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
-                    width: 60%;
+                    width: 70%;
                     h1{
-                        font-size: 3em;
+                        font-size: 2.5em;
                         color: $black;
                         text-shadow: #dbdada 1px 1px 0px;
                         text-transform: uppercase;
+                        padding-bottom: 1em;
                     }
                     p{
                         color: $black;
@@ -360,14 +361,14 @@ main{
 
                     .box-info{
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: flex-start;
                         align-items: center;
                         flex-direction: column;
                         padding: 1.5em;
                         /* text-shadow: $black 1px 1px 0px; */
                         color: #fff;
                         flex: 33.3%;
-                        height: 10em;
+                        height: 12em;
                         h3{
                             font-size: 1.3em;
                             padding-bottom: 1em;
@@ -441,8 +442,10 @@ main{
                     color: $brownred;
                     
                     h1{
-                        font-weight: 500;
-                        font-size: 3em;
+                        /* font-weight: 500; */
+                        color: $black;
+                        font-size: 2.5em;
+                        text-transform: uppercase;
                         padding-bottom: .7em;
                         text-shadow: #fff 1px 1px 0px;
                     }
@@ -682,9 +685,20 @@ main{
 
             .horario{
                 color: $orange;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
                 .center{
+                    height: 170px;
+                    display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h3{
+                        font-weight: 500;
+                        font-size: 1em;
+                    }
                 }
                 p{
                     font-weight: 500;
@@ -748,7 +762,7 @@ main{
         .content{
             position: relative;
             height: 500px;
-            width: 70%;
+            width: 75%;
             /* border: solid 2px #ccc; */
             
             .uno{
@@ -769,6 +783,7 @@ main{
                     h1{
                         font-size: 3em;
                         font-weight: 500;
+                        text-transform: uppercase;
                         color: #fff;
                     }
                 }
@@ -837,6 +852,8 @@ main{
                 font-size: 3em;
                 font-weight: 500;
                 color: #fff;
+                text-transform: uppercase;
+                text-align: center;
             }
         }
         .fedu-right{
@@ -847,8 +864,8 @@ main{
             align-items: center;
             padding: 1em;
             p{
-                width: 100%;
                 color: $black;
+                text-align: center;
             }
         }
     }
@@ -921,10 +938,11 @@ main{
                     font-size: 3em;
                     font-weight: 500;
                     color: #fff;
+                    text-transform: uppercase;
                 }
 
                 p{
-                    width: 90%;
+                    width: 100%;
                     color: $black;
                 }
             }
@@ -965,14 +983,29 @@ main{
                 justify-content: center;
                 align-items: center;
                 .text{
+                    h1{
+                        font-size: 3em;
+                        font-weight: 500;
+                        color: #fff;
+                        text-shadow: #6b6868 1px 1px 0px;
+                        text-transform: uppercase;
+                    }
 
                     p{
-                        width: 60%;
+                        width: 80%;
                     }
                 }
             }
         }
     }
+
+}
+
+.text-gradient{
+    background-color: $orange;
+    background: radial-gradient(circle farthest-side at center center, $orange 54%, $green 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
