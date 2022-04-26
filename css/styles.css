@@ -1747,7 +1747,8 @@ footer .dev {
             flex-direction: column;
   }
   .maps .cil {
-    padding: 6em;
+    padding-top: 6em;
+    padding-bottom: 6em;
   }
   .maps .cil img {
     max-width: 360px;
