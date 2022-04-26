@@ -11,9 +11,14 @@
         justify-content: space-between;
     }
     header{
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
         padding-top: 3em;
+    }
+
+    header .sun{
+        bottom: unset;
+        top: 12%;
     }
 
     header .slide .text img.logo-cehm{
@@ -55,13 +60,13 @@
         max-width: 350px;
     }
     .about .row p.frase{
-        font-size: 1em;
-        left: 41%;
+        font-size: .9em;
+        left: 7%;
         top: 4%;
         background-color: #800008;
         border-radius: 20px;
         padding: 10px 1px 10px 15px;
-        width: 53%;
+        width: 82%;
         color: #fff;
     }
 
@@ -136,7 +141,7 @@
     }
 
     .protection .content .pro-shield img{
-        max-width: 360px;
+        max-width: 300px;
     }
 
     .protection .content .pro-text{
@@ -174,7 +179,7 @@
     }
 
     .maps .cil img{
-        max-width: 360px;
+        max-width: 300px;
     }
 
     footer .content{
@@ -192,6 +197,10 @@
 
     .parallax .content .info .cta{
         font-size: 1.2em;
+    }
+
+    footer .content .col{
+        width: 100%;
     }
 
 }

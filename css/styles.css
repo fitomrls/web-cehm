@@ -1074,6 +1074,10 @@ footer .content .col .social {
           align-items: center;
 }
 
+footer .content .col .social a.social-logo img {
+  max-width: 255px;
+}
+
 footer .content .col .social ul {
   padding-top: 1em;
   display: -webkit-box;
@@ -1592,9 +1596,13 @@ footer .dev {
             justify-content: space-between;
   }
   header {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 3em;
+  }
+  header .sun {
+    bottom: unset;
+    top: 12%;
   }
   header .slide .text img.logo-cehm {
     width: 265px;
@@ -1641,13 +1649,13 @@ footer .dev {
     max-width: 350px;
   }
   .about .row p.frase {
-    font-size: 1em;
-    left: 41%;
+    font-size: .9em;
+    left: 7%;
     top: 4%;
     background-color: #800008;
     border-radius: 20px;
     padding: 10px 1px 10px 15px;
-    width: 53%;
+    width: 82%;
     color: #fff;
   }
   .about .info .content {
@@ -1714,7 +1722,7 @@ footer .dev {
     font-size: 1.6em;
   }
   .protection .content .pro-shield img {
-    max-width: 360px;
+    max-width: 300px;
   }
   .protection .content .pro-text {
     margin-top: 3em;
@@ -1751,7 +1759,7 @@ footer .dev {
     padding-bottom: 6em;
   }
   .maps .cil img {
-    max-width: 360px;
+    max-width: 300px;
   }
   footer .content {
     -webkit-box-orient: vertical;
@@ -1768,6 +1776,9 @@ footer .dev {
   }
   .parallax .content .info .cta {
     font-size: 1.2em;
+  }
+  footer .content .col {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
