@@ -65,8 +65,44 @@
                 <a href="#" class="contact">
                     <img src="images/flagbol.svg" alt="flag bolivia">
                     &Uacute;nete
-                </a>                
+                </a>
             </div>
+            <div :class="toggleCls" @click="toggle"></div>
+            <ul :class="navigation">
+                <li>
+                    <a class="nav-lnk" href="#home">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-lnk" href="#">Nuestro Camino</a>
+                </li>
+                <li class="submenu">
+                    <label for="cbox"><span>Nuestro Sueño</span></label>
+                    <input type="checkbox" id="cbox">
+                    <ul class="slide">
+                        <li><a href="#" 
+                                v-scroll-to="{
+                                    el: '#mision',
+                                    onDone: onDone
+                                }">Visi&oacute;n</a></li>
+                        <li><a href="#" v-scroll-to="{el: '#vision', onDone: onDone}">Misi&oacute;n</a></li>
+                        <li><a href="#" v-scroll-to="{el: '#valores', onDone: onDone}">Valores</a></li>
+                        <li><a href="#" v-scroll-to="{el: '#proteccion', onDone: onDone}">Pol&iacute;tica de Protecci&oacute;n</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <label for="areas"> <span>&Aacute;reas de Acci&oacute;n</span></label>
+                    <input type="checkbox" id="areas">
+                    <ul class="slide">
+                        <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
+                        <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
+                        <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
+                        <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-lnk" href="#">Linea de Tiempo</a>
+                </li>
+            </ul>
         </div>
         <header id="home">
             <div class="rec-ver gradient3"></div>
@@ -336,38 +372,52 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
 
-    <script>
-        new Vue({
-          el: "#app",
-          data() {
-            return {
-              currentYear: new Date().getFullYear(),
-              scTimer: 0,
-              scY: 0,
+<script>
+    new Vue({
+    el: "#app",
+    data(){
+        return {
+            currentYear: new Date().getFullYear(),
+            scTimer: 0,
+            scY: 0,
+            navigation: "navigation",
+            toggleCls: "toggle"
+        }
+    },
+    mounted () {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll: function () {
+            if (this.scTimer) return;
+                this.scTimer = setTimeout(() => {
+                this.scY = window.scrollY;
+                clearTimeout(this.scTimer);
+                this.scTimer = 0;
+            }, 100);
+        },
+        toTop: function (){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        },
+        toggle(){
+            if(this.navigation==='navigation'){
+              this.navigation = "navigation active";
+              this.toggleCls = "toggle active";
+            }else{
+              this.navigation = "navigation";
+              this.toggleCls = "toggle";
             }
-          },
-          mounted () {
-            window.addEventListener('scroll', this.handleScroll);
-          },
-
-          methods: {
-            handleScroll: function () {
-        if (this.scTimer) return;
-        this.scTimer = setTimeout(() => {
-          this.scY = window.scrollY;
-          clearTimeout(this.scTimer);
-          this.scTimer = 0;
-        }, 100);
-      },
-            toTop: function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      },
-            },
-        })
-    </script>
+        },
+        onDone(){
+            this.navigation = "navigation";
+            this.toggleCls = "toggle";
+        }
+    },
+    })
+</script>
 
 </body>
 </html>
