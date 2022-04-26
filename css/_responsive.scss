@@ -1,0 +1,200 @@
+@media (max-width: 750px) {
+    .nav-menu .nav-content{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .nav-menu .nav-content .menu nav.primary-navigation{
+        display: none;
+    }
+    .nav-menu .nav-content .menu{
+        justify-content: space-between;
+    }
+    header{
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 3em;
+    }
+
+    header .slide .text img.logo-cehm{
+        width: 265px;
+    }
+
+    header .slide{
+        margin-top: unset;
+        flex-direction: column;
+        height: 600px;
+    }
+    header .slide .text{
+        flex: 50%;
+        align-items: center;
+        padding-left: unset;
+    }
+    header .slide .img-b{
+        flex: 50%;
+        width: 100%;
+    }
+
+    header .slide .text a.cta{
+        font-size: 1em;
+    }
+
+    /* .about{
+        height: 130vh;
+    } */
+
+    .about .row{
+        flex-direction: column;
+    }
+
+    .about .row .col-text .content p{
+        font-size: 1.1em;
+    }
+
+    .about .row .col-img img.cbba {
+        max-width: 350px;
+    }
+    .about .row p.frase{
+        font-size: 1em;
+        left: 41%;
+        top: 4%;
+        background-color: #800008;
+        border-radius: 20px;
+        padding: 10px 1px 10px 15px;
+        width: 53%;
+        color: #fff;
+    }
+
+    .about .info .content{
+        height: unset;
+        flex-direction: column;
+    }
+
+    .about .row .col-text .content{
+        width: 88%;
+        padding: .5em;
+
+    }
+
+    .about .row .col-text .content h1{
+        font-size: 2em;
+    }
+
+    .about .info .content .vision{
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 25px;
+        width: 250px;
+    }
+
+    .about .info .content .mision{
+        width: 250px;
+    }
+
+    .about .info .content .filo{
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 25px;
+        width: 250px;
+    }
+
+    .areas{
+        height: auto;
+    }
+
+    .areas .content{
+        flex-direction: column;
+        height: unset;
+    }
+
+    .areas .content .text-area{
+        width: 100%;
+    }
+
+    .areas .content .boxes-area{
+        width: 100%;
+    }
+
+    .proteccion{
+        height: auto;
+    }
+
+    .protection .content{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .protection .content .pro-text{
+        width: 95%;
+    }
+
+    .protection .content .pro-text .col .wasap{
+        font-size: 1.5em;
+        padding: 1px 20px 1px 20px;
+    }
+
+    .protection .content .pro-text .col h1{
+        font-size: 1.6em;
+    }
+
+    .protection .content .pro-shield img{
+        max-width: 360px;
+    }
+
+    .protection .content .pro-text{
+        margin-top: 3em;
+    }
+
+    .parallax{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .parallax .content{
+        flex-direction: column;
+    }
+
+    .parallax .content .avatar img{
+        max-width: 250px;
+    }
+
+    .parallax .content .info h1{
+        font-size: 2.5em;
+    }
+
+    .parallax .content .info{
+        align-items: center;
+    }
+
+    .maps{
+        flex-direction: column;
+    }
+
+    .maps .cil{
+        padding: 6em;
+    }
+
+    .maps .cil img{
+        max-width: 360px;
+    }
+
+    footer .content{
+        flex-direction: column;
+    }
+
+    #pagetop{
+        right: unset;
+        left: 0;
+    }
+
+    .protection img.banner{
+        max-width: 300px;
+    }
+
+    .parallax .content .info .cta{
+        font-size: 1.2em;
+    }
+
+    .parallax .content .info .cta a.more{
+
+    }
+
+}

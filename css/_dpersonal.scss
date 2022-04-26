@@ -1,0 +1,76 @@
+.dpersonal{
+    height: 100vh;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .content{
+        position: relative;
+        height: 500px;
+        width: 75%;
+        /* border: solid 2px #ccc; */
+        
+        .uno{
+            position: absolute;
+            top: 0%;
+            left: 5%;
+            width: 100%;
+            padding: 0em 1em 1em 1em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img.img-1{
+                max-width: 370px;
+                border-radius: 50%;
+            }
+            .title{
+                margin-bottom: 5em;
+                h1{
+                    font-size: 3em;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+        .dos{
+            position: absolute;
+            bottom: -2%;
+            right:  6%;
+            /* background-color: darkgoldenrod; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0em 1em 1em 1em;
+            img.img-2{
+                max-width: 330px;
+                border-radius: 50%;
+                /* -webkit-mask: url(../images/blob1.svg); */
+                border: solid 2px #fff;
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0em 1em 1em 1.3em;
+
+                img.icon{
+                    background-color: #fff;
+                    border: solid 2px $orange;
+                    padding: 1em;
+                    border-radius: 50%;
+                }
+
+                p{
+                    padding-top: .7em;
+                    color: $black;
+                    width: 95%;
+                    margin-left: 7em;
+                }
+            }
+        }
+    }
+}
