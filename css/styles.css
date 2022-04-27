@@ -1244,9 +1244,14 @@ footer .dev {
 }
 
 .dpersonal {
-  height: 100vh;
   width: 100%;
-  /* background-color: crimson; */
+}
+
+.dpersonal .content {
+  height: 100vh;
+  position: relative;
+  /* height: 500px; */
+  width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1256,30 +1261,18 @@ footer .dev {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.dpersonal .content {
-  position: relative;
-  height: 500px;
-  width: 75%;
-  /* border: solid 2px #ccc; */
 }
 
 .dpersonal .content .uno {
-  position: absolute;
-  top: 0%;
-  left: 5%;
-  width: 100%;
-  padding: 0em 1em 1em 1em;
+  position: relative;
+  height: 80vh;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1290,41 +1283,36 @@ footer .dev {
   border-radius: 50%;
 }
 
-.dpersonal .content .uno .title {
-  margin-bottom: 5em;
+.dpersonal .content .uno .uno-img {
+  position: relative;
 }
 
-.dpersonal .content .uno .title h1 {
-  font-size: 3em;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.dpersonal .content .dos {
+.dpersonal .content .uno .uno-img img.icon {
   position: absolute;
-  bottom: -2%;
-  right: 6%;
-  /* background-color: darkgoldenrod; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0em 1em 1em 1em;
+  left: -3%;
+  bottom: 5%;
+  background-color: #fff;
+  border: solid 2px #F8AD1D;
+  padding: 1em;
+  border-radius: 50%;
 }
 
-.dpersonal .content .dos img.img-2 {
-  max-width: 330px;
+.dpersonal .content .uno .dos-img {
+  position: absolute;
+  right: 7%;
+  bottom: -1px;
+}
+
+.dpersonal .content .uno .dos-img img.img-2 {
+  max-width: 300px;
   border-radius: 50%;
-  /* -webkit-mask: url(../images/blob1.svg); */
   border: solid 2px #fff;
 }
 
-.dpersonal .content .dos .text {
+.dpersonal .content .dos {
+  width: 30%;
+  height: 80vh;
+  /* background-color: cyan; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1335,24 +1323,21 @@ footer .dev {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0em 1em 1em 1.3em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.dpersonal .content .dos .text img.icon {
-  background-color: #fff;
-  border: solid 2px #F8AD1D;
-  padding: 1em;
-  border-radius: 50%;
+.dpersonal .content .dos h1 {
+  font-size: 3em;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.dpersonal .content .dos .text p {
-  padding-top: .7em;
+.dpersonal .content .dos p {
   color: #303030;
-  width: 95%;
-  margin-left: 7em;
+  text-align: left;
 }
 
 .fedu {
@@ -1426,6 +1411,9 @@ footer .dev {
 
 .afamiliar {
   width: 100%;
+}
+
+.afamiliar .content {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1436,14 +1424,11 @@ footer .dev {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* background-color: crimson; */
 }
 
-.afamiliar .img-circle {
+.afamiliar .content .img-circle {
   position: relative;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1455,15 +1440,15 @@ footer .dev {
           align-items: center;
 }
 
-.afamiliar .img-circle img.meet {
+.afamiliar .content .img-circle img.meet {
   max-width: 400px;
   border-radius: 50%;
   border: solid 4px #fff;
 }
 
-.afamiliar .img-circle .fami-icon {
+.afamiliar .content .img-circle .fami-icon {
   position: absolute;
-  bottom: 10%;
+  bottom: -7%;
   right: 15%;
   background-color: #fff;
   border: solid 2px #F8AD1D;
@@ -1471,16 +1456,16 @@ footer .dev {
   border-radius: 50%;
 }
 
-.afamiliar .img-circle #circle1 {
+.afamiliar .content .img-circle #circle1 {
   position: absolute;
-  top: 5%;
-  left: 21%;
+  top: 9%;
+  left: 9%;
   fill: #F8AD1D;
   width: 80px;
   height: 80px;
 }
 
-.afamiliar .img-circle #circle2 {
+.afamiliar .content .img-circle #circle2 {
   position: absolute;
   bottom: 26%;
   left: 21%;
@@ -1489,8 +1474,7 @@ footer .dev {
   height: 30px;
 }
 
-.afamiliar .text {
-  /* background-color: cyan; */
+.afamiliar .content .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1500,14 +1484,11 @@ footer .dev {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: inherit;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  /* height: inherit; */
+  width: 35%;
 }
 
-.afamiliar .text .text-content {
-  width: 400px;
+.afamiliar .content .text .text-content {
   height: 300px;
   /* background-color: yellow; */
   display: -webkit-box;
@@ -1525,14 +1506,14 @@ footer .dev {
           flex-direction: column;
 }
 
-.afamiliar .text .text-content h1 {
+.afamiliar .content .text .text-content h1 {
   font-size: 3em;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
 }
 
-.afamiliar .text .text-content p {
+.afamiliar .content .text .text-content p {
   width: 100%;
   color: #303030;
 }
@@ -1925,6 +1906,67 @@ footer .dev {
   }
   .nav-menu ul.navigation.active li.submenu #areas:checked + .slide {
     height: 100px;
+  }
+  .dpersonal .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dpersonal .content .dos h1 {
+    font-size: 2em;
+  }
+  .dpersonal .content .uno img.img-1 {
+    max-width: 310px;
+  }
+  .dpersonal .content .uno .dos-img img.img-2 {
+    max-width: 208px;
+  }
+  .dpersonal .content .uno .dos-img {
+    right: -39%;
+  }
+  .dpersonal .content .dos {
+    width: 80%;
+  }
+  .fedu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fedu .fedu-left h1 {
+    font-size: 2em;
+  }
+  .afamiliar .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .afamiliar .content .text .text-content h1 {
+    font-size: 2em;
+  }
+  .afamiliar .content .img-circle img.meet {
+    max-width: 280px;
+  }
+  .cap .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cap .content .left .text h1 {
+    font-size: 2em;
+  }
+  .afamiliar .content .img-circle #circle1 {
+    left: -94%;
+  }
+  .afamiliar .content .img-circle #circle2 {
+    left: unset;
+    right: -87%;
+  }
+  img.icon {
+    width: 70px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -274,4 +274,60 @@
         }   
     }
 
+    .dpersonal .content{
+        flex-direction: column;
+    }
+
+    .dpersonal .content .dos h1{
+        font-size: 2em;
+    }
+
+    .dpersonal .content .uno img.img-1{
+        max-width: 310px;
+    }
+    .dpersonal .content .uno .dos-img img.img-2{
+        max-width: 208px;
+    }
+    .dpersonal .content .uno .dos-img{
+        right: -39%;
+    }
+    .dpersonal .content .dos{
+        width: 80%;
+    }
+    .fedu{
+        flex-direction: column;
+    }
+    .fedu .fedu-left h1{
+        font-size: 2em;
+    }
+
+    .afamiliar .content{
+        flex-direction: column;
+    }
+    .afamiliar .content .text .text-content h1{
+        font-size: 2em;
+    }
+    .afamiliar .content .img-circle img.meet{
+        max-width: 280px;
+    }
+
+    .cap .content{
+        flex-direction: column;
+    }
+    .cap .content .left .text h1{
+        font-size: 2em;
+    }
+
+    .afamiliar .content .img-circle #circle1{
+        left: -94%;
+    }
+    .afamiliar .content .img-circle #circle2{
+        left: unset;
+        right: -87%;
+    }
+    img.icon {
+        width: 70px;
+    }
+
+
 }

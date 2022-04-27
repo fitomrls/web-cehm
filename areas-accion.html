@@ -64,9 +64,41 @@
                 
                 <a href="#" class="contact">
                     <img src="images/flagbol.svg" alt="flag bolivia">
-                    Voluntariado
-                </a>                
+                    &Uacute;nete
+                </a>
             </div>
+            <div :class="toggleCls" @click="toggle"></div>
+            <ul :class="navigation">
+                <li>
+                    <a class="nav-lnk" href="index.html#home">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-lnk" href="#">Nuestro Camino</a>
+                </li>
+                <li class="submenu">
+                    <label for="cbox"><span>Nuestro Sueño</span></label>
+                    <input type="checkbox" id="cbox">
+                    <ul class="slide">
+                        <li><a href="index.html#vision">Visi&oacute;n</a></li>
+                        <li><a href="index.html#mision" >Misi&oacute;n</a></li>
+                        <li><a href="index.html#valores" >Valores</a></li>
+                        <li><a href="index.html#proteccion" >Pol&iacute;tica de Protecci&oacute;n</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <label for="areas"> <span>&Aacute;reas de Acci&oacute;n</span></label>
+                    <input type="checkbox" id="areas">
+                    <ul class="slide">
+                        <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
+                        <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
+                        <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
+                        <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-lnk" href="#">Linea de Tiempo</a>
+                </li>
+            </ul>
         </div>
         <section class="header-portrait" id="home">
             <div class="content">
@@ -77,19 +109,19 @@
         <section class="dpersonal gradient3" id="personal">
             <div class="content">
                 <div class="uno">
-                    <img class="img-1" src="images/areas/a1.jpg" alt="">
-                    <div class="title">
-                        <h1>Desarrollo Personal</h1>
+                    <div class="uno-img">
+                        <img class="img-1" src="images/areas/a1.jpg" alt="">
+                        <img class="icon" src="images/icons/personal.svg" width="80px" alt="desarrollo personal icon">
+                    </div>
+                    <div class="dos-img">
+                        <img class="img-2" src="images/areas/a2.jpg" alt="">
                     </div>
                 </div>
                 <div class="dos">
-                    <img class="img-2" src="images/areas/a2.jpg" alt="">
-                    <div class="text">
-                        <img class="icon" src="images/icons/personal.svg" width="100px" alt="desarrollo personal icon">
-                        <p>
-                            Está enfocada en el fortalecimiento de las habilidades sociales de los Niños, Niñas y Adolescentes, a través de las diferentes actividades socio-educativas lúdicas y sean protagonistas de su futuro.
-                        </p>
-                    </div>
+                    <h1>Desarrollo Personal</h1>
+                    <p>
+                        Está enfocada en el fortalecimiento de las habilidades sociales de los Niños, Niñas y Adolescentes, a través de las diferentes actividades socio-educativas lúdicas y sean protagonistas de su futuro.
+                    </p>
                 </div>
             </div>
         </section>
@@ -107,24 +139,26 @@
         </section>
 
         <section class="afamiliar gradient3" id="familiar">
-            <div class="img-circle">
-                <img class="meet" src="images/areas/familiar.jpeg" alt="">
-                <div class="fami-icon">
-                    <img class="icon" src="images/icons/family.svg"  width="100px" alt="icon acompañamiento familiar">
+            <div class="content">
+                <div class="img-circle">
+                    <img class="meet" src="images/areas/familiar.jpeg" alt="">
+                    <div class="fami-icon">
+                        <img class="icon" src="images/icons/family.svg"  width="100px" alt="icon acompañamiento familiar">
+                    </div>
+                    <svg id="circle1" viewBox="0 0 24 24">
+                        <path  d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                    <svg id="circle2" viewBox="0 0 24 24">
+                        <path  d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
                 </div>
-                <svg id="circle1" viewBox="0 0 24 24">
-                    <path  d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-                </svg>
-                <svg id="circle2" viewBox="0 0 24 24">
-                    <path  d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-                </svg>
-            </div>
-            <div class="text">
-                <div class="text-content">
-                    <h1>Acompañamiento Familiar</h1>
-                    <p>
-                        Buscamos generar relaciones armoniosas y el protagonismo de los padres en el crecimiento integral de sus hijos/as.
-                    </p>
+                <div class="text">
+                    <div class="text-content">
+                        <h1>Acompañamiento Familiar</h1>
+                        <p>
+                            Buscamos generar relaciones armoniosas y el protagonismo de los padres en el crecimiento integral de sus hijos/as.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -146,7 +180,7 @@
         </section>
 
         <section class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.829324065484!2d-66.153273!3d-17.401835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bc1dec0e96383fe!2sCentro%20Hermano%20Manolo!5e0!3m2!1sen!2sus!4v1649343456065!5m2!1sen!2sus" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.829324065484!2d-66.153273!3d-17.401835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bc1dec0e96383fe!2sCentro%20Hermano%20Manolo!5e0!3m2!1sen!2sus!4v1649343456065!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="cil">
                 <h2>Gracias al apoyo de:</h2>
                 <a class="lnk" href="https://www.achanceinlife.org/" target="_blank">
@@ -251,36 +285,51 @@
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
 
     <script>
-        new Vue({
-          el: "#app",
-          data() {
+    new Vue({
+        el: "#app",
+        data() {
             return {
               currentYear: new Date().getFullYear(),
               scTimer: 0,
               scY: 0,
+              navigation: "navigation",
+              toggleCls: "toggle"
             }
-          },
-          mounted () {
+        },
+        mounted () {
             window.addEventListener('scroll', this.handleScroll);
-          },
+        },
 
-          methods: {
-            handleScroll: function () {
-        if (this.scTimer) return;
-        this.scTimer = setTimeout(() => {
-          this.scY = window.scrollY;
-          clearTimeout(this.scTimer);
-          this.scTimer = 0;
-        }, 100);
-      },
-            toTop: function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      },
+        methods: {
+            handleScroll() {
+                if (this.scTimer) return;
+                this.scTimer = setTimeout(() => {
+                this.scY = window.scrollY;
+                clearTimeout(this.scTimer);
+                this.scTimer = 0;
+                }, 100);
             },
-        })
+            toTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            },
+            toggle(){
+                if(this.navigation==='navigation'){
+                this.navigation = "navigation active";
+                this.toggleCls = "toggle active";
+                }else{
+                this.navigation = "navigation";
+                this.toggleCls = "toggle";
+                }
+            },
+            onDone(){
+                this.navigation = "navigation";
+                this.toggleCls = "toggle";
+            }
+        },
+    })
     </script>
 
 
