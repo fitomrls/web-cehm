@@ -48,6 +48,14 @@
                                 </ul>
                           </li>
                           <li>
+                              <a href="#">Ejes &dtrif;</a>
+                                <ul class="dropdown">
+                                    <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
+                                    <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
+                                    <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
+                                </ul>
+                          </li>
+                          <li>
                               <a href="#">Linea de Tiempo &dtrif;</a>
                                 <ul class="dropdown">
                                 <li><a href="#">2009</a></li>
@@ -99,6 +107,15 @@
                         <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
                     </ul>
                 </li>
+                <li class="submenu">
+                    <label for="ejes"> <span>Ejes de Acci&oacute;n</span></label>
+                    <input type="checkbox" id="ejes">
+                    <ul class="slide">
+                        <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
+                        <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
+                        <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
+                    </ul>
+                </li>
                 <li>
                     <a class="nav-lnk" href="#">Linea de Tiempo</a>
                 </li>
@@ -111,7 +128,7 @@
                 <div class="text">
                     <img class="logo-cehm" src="images/logo.svg" alt="logo-cehm">
                     <p>
-                        Construyendo de sueños desde 2009
+                        Construyendo sueños desde 2009
                     </p>
                     <a class="cta" href="#"  v-scroll-to="{el: '#info'}">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -141,7 +158,7 @@
                       <img class="concord" src="images/cristocon.svg" alt="cristo concordia cbba">
                     </div>
                     <p class="frase">
-                        "Tengan animo y fe la buena semilla crecerá más tarde en el corazón de los jóvenes" <br> Edmundo Rice
+                        "Tengan &aacute;nimo, la buena semilla brotar&aacute; m&aacute;s adelante en el coraz&oacute;n de los j&oacute;venes" <br> Edmundo Rice
                     </p>
                 </div>
             </div>
@@ -372,52 +389,52 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
 
-<script>
-    new Vue({
-    el: "#app",
-    data(){
-        return {
-            currentYear: new Date().getFullYear(),
-            scTimer: 0,
-            scY: 0,
-            navigation: "navigation",
-            toggleCls: "toggle"
-        }
-    },
-    mounted () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-    methods: {
-        handleScroll: function () {
-            if (this.scTimer) return;
-                this.scTimer = setTimeout(() => {
-                this.scY = window.scrollY;
-                clearTimeout(this.scTimer);
-                this.scTimer = 0;
-            }, 100);
-        },
-        toTop: function (){
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        },
-        toggle(){
-            if(this.navigation==='navigation'){
-              this.navigation = "navigation active";
-              this.toggleCls = "toggle active";
-            }else{
-              this.navigation = "navigation";
-              this.toggleCls = "toggle";
+    <script>
+        new Vue({
+        el: "#app",
+        data(){
+            return {
+                currentYear: new Date().getFullYear(),
+                scTimer: 0,
+                scY: 0,
+                navigation: "navigation",
+                toggleCls: "toggle"
             }
         },
-        onDone(){
-            this.navigation = "navigation";
-            this.toggleCls = "toggle";
-        }
-    },
-    })
-</script>
+        mounted () {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        methods: {
+            handleScroll: function () {
+                if (this.scTimer) return;
+                    this.scTimer = setTimeout(() => {
+                    this.scY = window.scrollY;
+                    clearTimeout(this.scTimer);
+                    this.scTimer = 0;
+                }, 100);
+            },
+            toTop: function (){
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            },
+            toggle(){
+                if(this.navigation==='navigation'){
+                this.navigation = "navigation active";
+                this.toggleCls = "toggle active";
+                }else{
+                this.navigation = "navigation";
+                this.toggleCls = "toggle";
+                }
+            },
+            onDone(){
+                this.navigation = "navigation";
+                this.toggleCls = "toggle";
+            }
+        },
+        })
+    </script>
 
 </body>
 </html>

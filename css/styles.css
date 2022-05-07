@@ -95,7 +95,8 @@ ul li ul li a {
   font-size: 16px;
   background-color: #F8AD1D;
   border-radius: 25px;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .nav-menu .nav-content .menu nav.primary-navigation ul li {
@@ -174,7 +175,7 @@ ul li ul li a {
   color: #ffffff;
   width: 120px;
   height: 1.2em;
-  padding: 13px;
+  padding: 1em;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1850,11 +1851,6 @@ footer .dev {
   footer .content .col {
     width: 100%;
   }
-  .nav-menu ul.navigation.active li.submenu {
-    /* .slide li {
-                padding : 30px;
-            } */
-  }
   .nav-menu ul.navigation.active li.submenu span {
     color: white;
     cursor: pointer;
@@ -1905,6 +1901,14 @@ footer .dev {
     position: absolute;
   }
   .nav-menu ul.navigation.active li.submenu #areas:checked + .slide {
+    height: 100px;
+  }
+  .nav-menu ul.navigation.active li.submenu #ejes {
+    opacity: 0;
+    height: 0px;
+    position: absolute;
+  }
+  .nav-menu ul.navigation.active li.submenu #ejes:checked + .slide {
     height: 100px;
   }
   .dpersonal .content {

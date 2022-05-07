@@ -249,26 +249,30 @@
                 }
             }
             
-            /* .slide li {
-                padding : 30px;
-            } */
-
             #cbox{
                 opacity: 0;
                 height: 0px;
                 position: absolute; 
             }
-
             #cbox:checked + .slide{
                 height: 100px;
             }
+
             #areas{
                 opacity: 0;
                 height: 0px;
                 position: absolute; 
             }
-
             #areas:checked + .slide{
+                height: 100px;
+            }
+
+            #ejes{
+                opacity: 0;
+                height: 0px;
+                position: absolute; 
+            }
+            #ejes:checked + .slide{
                 height: 100px;
             }
         }   
@@ -328,6 +332,4 @@
     img.icon {
         width: 70px;
     }
-
-
 }

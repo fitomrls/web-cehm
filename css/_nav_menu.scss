@@ -32,7 +32,8 @@
                   font-size: 16px;
                   background-color: $orange;
                   border-radius: 25px;
-                  padding: 1em;
+                  padding-top: 1em;
+                  padding-bottom: 1em;
               
                   ul li {
                     list-style: none;
@@ -113,7 +114,7 @@
             color:#ffffff;
             width: 120px;
             height: 1.2em;
-            padding: 13px;
+            padding: 1em;
             font-weight: 500;
             display: flex;
             justify-content: space-evenly;
