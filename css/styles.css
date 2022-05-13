@@ -1991,7 +1991,7 @@ footer .dev {
     width: 70px;
   }
   .bg {
-    height: 290px !important;
+    height: 100% !important;
   }
 }
 
@@ -2010,9 +2010,9 @@ footer .dev {
     background-position: center;
     background-size: cover;
   }
-  .bg {
-    height: 290px !important;
-  }
+  /* .bg{
+        height: 290px !important;
+    } */
 }
 
 .bg {
