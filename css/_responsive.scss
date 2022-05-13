@@ -52,8 +52,9 @@
         padding-left: unset;
     }
     header .slide .img-b{
-        flex: 50%;
+        flex: 47%;
         width: 100%;
+        -webkit-mask: unset;
     }
 
     header .slide .text a.cta{
@@ -331,5 +332,25 @@
     }
     img.icon {
         width: 70px;
+    }
+
+    .bg{
+        height: 290px !important;
+    }
+}
+
+@media (max-width: 950px) {
+    header .slide{
+        flex-direction: column;
+    }
+    header .slide .img-b{
+        flex: 47%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }   
+
+    .bg{
+        height: 290px;
     }
 }
