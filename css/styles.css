@@ -2011,7 +2011,7 @@ footer .dev {
     background-size: cover;
   }
   .bg {
-    height: 290px;
+    height: 290px !important;
   }
 }
 
