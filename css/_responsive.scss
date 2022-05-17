@@ -349,6 +349,29 @@
     .text-eje{
         width: 90%;
     }
+
+    .text-eje h1{
+        font-size: 2em;
+        padding-bottom: .4em;
+    }
+    .text-eje h3{
+        font-size: 1.1em;
+        padding-bottom: .3em;
+    }
+
+    .text-eje .sun-text img{
+        width: 12em;
+    }
+    .text-eje p{
+        font-size: .8em;
+    }
+    .text-eje ul{
+        font-size: .8em; 
+    }
+
+    .egenero{
+        background-position-x: 65%;
+    }
 }
 
 @media (max-width: 950px) {
