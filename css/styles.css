@@ -1261,6 +1261,10 @@ footer .dev {
   padding: 1em;
 }
 
+.header-portrait .ejes {
+  background-image: url(../images/portrait_ejes.jpg);
+}
+
 .dpersonal {
   width: 100%;
 }
@@ -1608,6 +1612,87 @@ footer .dev {
 .cap .content .right img.box {
   max-width: 90%;
   border-radius: 25px;
+}
+
+.eje {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brecha {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000086)), url(../images/brecha.jpg);
+  background-image: linear-gradient(#00000086), url(../images/brecha.jpg);
+}
+
+.text-eje {
+  width: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 50vh;
+}
+
+.text-eje h1 {
+  color: #fff;
+  font-size: 3em;
+}
+
+.text-eje h3 {
+  color: #F8AD1D;
+}
+
+.text-eje p {
+  color: #fff;
+}
+
+.text-eje ul {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.text-eje ul li {
+  color: #fff;
+}
+
+.text-eje .sun-text {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.text-eje .sun-text img {
+  width: 25em;
+  opacity: .2;
+}
+
+.climatica {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000086)), url(../images/clima.jpg);
+  background-image: linear-gradient(#00000086), url(../images/clima.jpg);
+}
+
+.egenero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000086)), url(../images/egenero.jpg);
+  background-image: linear-gradient(#00000086), url(../images/egenero.jpg);
 }
 
 @-webkit-keyframes float {
@@ -1998,6 +2083,9 @@ footer .dev {
   }
   .bg {
     height: 100% !important;
+  }
+  .text-eje {
+    width: 90%;
   }
 }
 
