@@ -296,7 +296,7 @@ header .sun {
   background-image: url(../images/sunlogo.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 header .slide {
@@ -480,7 +480,7 @@ header .slide .img-b img.slider {
   position: relative;
   border-radius: 50%;
   z-index: 2;
-  /* border: 1px dashed #fff; */
+  padding: 1em;
 }
 
 .about .row .col-img img.cbba {
@@ -526,7 +526,7 @@ header .slide .img-b img.slider {
 .about .row p.frase {
   position: absolute;
   left: 23%;
-  top: 0%;
+  top: -14%;
   font-size: 1.1em;
   color: #303030;
   font-style: italic;
@@ -1353,7 +1353,7 @@ footer .dev {
 .dpersonal .content .dos h1 {
   font-size: 3em;
   font-weight: 500;
-  color: #fff;
+  color: #303030;
   text-transform: uppercase;
 }
 
@@ -1531,7 +1531,7 @@ footer .dev {
 .afamiliar .content .text .text-content h1 {
   font-size: 3em;
   font-weight: 500;
-  color: #fff;
+  color: #303030;
   text-transform: uppercase;
 }
 
@@ -1543,7 +1543,7 @@ footer .dev {
 .cap {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(307deg, #ECFCFF 0%, #ECFCFF 40%, #F8AD1D calc(40% + 1px), #F8AD1D 60%, #3EE23E calc(60% + 1px), #3EE23E 72%, #800008 calc(72% + 1px), #800008 100%);
+  background: linear-gradient(111deg, #ECFCFF 0%, #ECFCFF 40%, #F8AD1D calc(40% + 1px), #F8AD1D 60%, #3EE23E calc(60% + 1px), #3EE23E 72%, #800008 calc(72% + 1px), #800008 100%);
 }
 
 .cap .content {
@@ -1578,18 +1578,18 @@ footer .dev {
 
 .cap .content .left .text {
   width: 80%;
-  text-shadow: #6b6868 1px 1px 0px;
+  /* text-shadow: #6b6868 1px 1px 0px; */
+  color: #303030;
 }
 
 .cap .content .left .text h1 {
   font-size: 3em;
   font-weight: 500;
-  color: #fff;
   text-transform: uppercase;
 }
 
 .cap .content .left .text p {
-  color: #fff;
+  /* color: #fff; */
   width: 80%;
 }
 
