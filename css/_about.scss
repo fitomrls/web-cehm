@@ -35,10 +35,13 @@
         }
         .col-img{
             flex: 55%;
+            
+            flex-direction: column;
             position: relative;
-            border-radius: 50%;
+            
             z-index: 2;
             padding: 1em;
+            height: inherit;
 
             img.cbba{
                 max-width: 450px;
@@ -70,9 +73,9 @@
             }
         }
         p.frase{
-            position: absolute;
+            /* position: absolute;
             left: 23%;
-            top: -14%;
+            top: -14%; */
             font-size: 1.1em;
             color: $black;
             font-style: italic;

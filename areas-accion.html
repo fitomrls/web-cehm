@@ -4,24 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-ui-preloader/dist/loader.css">
+    <link rel="stylesheet" href="css/styles.css">    
     <title>CEHM - &Aacute;reas de Acci&oacute;n</title>
 </head>
 <body>
+    <div class="preloader"> 
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+
     <main id="app">
-        <loader v-if="loader"
-            object="#ff4f5e" 
-            color1="#ffffff" 
-            color2="#17fd3d" 
-            size="5" 
-            speed="2" 
-            bg="#fff"
-            objectbg="#999793"
-            opacity="98" 
-            disableScrolling="false" 
-            name="spinning">
-        </loader>
         <div class="nav-menu">
             <div class="nav-content">
                 <div class="menu">
@@ -313,16 +304,16 @@
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-ui-preloader"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
 
     <script>
-    Vue.use(loader)
+
+    window.onload = function(){ 
+        document.querySelector(".preloader").style.display = "none"; 
+    }
+
     new Vue({
         el: "#app",
-        components: {
-            loader: loader
-        },
         data() {
             return {
               currentYear: new Date().getFullYear(),
@@ -330,12 +321,10 @@
               scY: 0,
               navigation: "navigation",
               toggleCls: "toggle",
-              loader: true
             }
         },
         mounted () {
             window.addEventListener('scroll', this.handleScroll);
-            const myTimeout = setTimeout(this.stopLoader, 3000);
         },
 
         methods: {
@@ -365,9 +354,6 @@
             onDone(){
                 this.navigation = "navigation";
                 this.toggleCls = "toggle";
-            },
-            stopLoader(){
-                this.loader = false
             }
         }
     })

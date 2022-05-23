@@ -179,13 +179,15 @@
                   </div>
                 </div>
                 <div class="col col-img">
-                    <img class="cbba" src="images/bol12.png" alt="">
-                    <div class="edu">
-                      <img class="concord" src="images/cristocon.svg" alt="cristo concordia cbba">
-                    </div>
                     <p class="frase">
                         "Tengan &aacute;nimo, la buena semilla brotar&aacute; m&aacute;s adelante en el coraz&oacute;n de los j&oacute;venes" <br> Edmundo Rice
                     </p>
+                    <div class="img-bol">
+                        <img class="cbba" src="images/bol12.png" alt="">
+                        <div class="edu">
+                          <img class="concord" src="images/cristocon.svg" alt="cristo concordia cbba">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="info" id="info">
@@ -455,8 +457,7 @@
             timer: null, // auto play
             timerDelay: 3000,
             toggleTimer: true, // pause auto play
-            minHeight: 0,
-            loader: true
+            minHeight: 0
         },
         methods: {
             handleScroll: function () {
@@ -519,9 +520,6 @@
                 setInterval(() => {
                     if(this.toggleTimer) this.toNext();
                 }, this.timerDelay);        
-            },
-            stopLoader(){
-                this.loader = false
             }
         },
         mounted (){
