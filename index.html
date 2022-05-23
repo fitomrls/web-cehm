@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    
     <title>Centro Hermano Manolo</title>
 </head>
 <body>
+    <div class="preloader"> 
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
     <main id="app">
         <div class="nav-menu">
             <div class="nav-content">
@@ -409,11 +413,16 @@
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
 
     <script>
 
-        const carousels = [
+    window.onload = function(){ 
+        document.querySelector(".preloader").style.display = "none"; 
+    }
+
+    const carousels = [
             {
                 img: `http://${location.host}/images/pic1.jpg`,
                 href: "#"
@@ -428,7 +437,6 @@
             }
         ];
 
-
     new Vue({
         el: "#app",
         data:{
@@ -437,7 +445,6 @@
             scY: 0,
             navigation: "navigation",
             toggleCls: "toggle",
-
             carouselName: 'carousel-next',
             carousels: carousels,
             len: 0,
@@ -448,7 +455,8 @@
             timer: null, // auto play
             timerDelay: 3000,
             toggleTimer: true, // pause auto play
-            minHeight: 0
+            minHeight: 0,
+            loader: true
         },
         methods: {
             handleScroll: function () {
@@ -511,9 +519,13 @@
                 setInterval(() => {
                     if(this.toggleTimer) this.toNext();
                 }, this.timerDelay);        
+            },
+            stopLoader(){
+                this.loader = false
             }
         },
         mounted (){
+            const myTimeout = setTimeout(this.stopLoader, 3000);
             window.addEventListener('scroll', this.handleScroll);
             this.len = this.carousels.length;
             this.autoplay = this.$refs.carousel.dataset.auto == 'true';

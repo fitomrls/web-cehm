@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-ui-preloader/dist/loader.css">
     <title>CEHM - Ejes de Acci&oacute;n</title>
 </head>
 <body>
     <main id="app">
+        <loader v-if="loader"
+            object="#ff4f5e" 
+            color1="#ffffff" 
+            color2="#17fd3d" 
+            size="5" 
+            speed="2" 
+            bg="#fff"
+            objectbg="#999793"
+            opacity="98" 
+            disableScrolling="false" 
+            name="spinning">
+        </loader>
         <div class="nav-menu">
             <div class="nav-content">
                 <div class="menu">
@@ -124,12 +137,8 @@
             </div>
         </section>
 
-
         <section class="eje brecha" id="bdigital">
             <div class="text-eje">
-                <div class="sun-text">
-                    <img src="images/sunlogo.svg" alt="">
-                </div>
                 <h1>Brecha Digital</h1>
                 <h3>¿Por qu&eacute; trabajamos la brecha digital?</h3>
                 <p>
@@ -144,9 +153,6 @@
 
         <section class="eje climatica" id="aclima">
             <div class="text-eje">
-                <div class="sun-text">
-                    <img src="images/sunlogo.svg" alt="">
-                </div>
                 <h1>Acci&oacute;n por el Clima</h1>
                 <h3>¿Por qué el CeHM actúa con acciones climáticas?</h3>
                 <p>
@@ -164,9 +170,6 @@
 
         <section class="eje egenero" id="egenero">
             <div class="text-eje">
-                <div class="sun-text">
-                    <img src="images/sunlogo.svg" alt="">
-                </div>
                 <h1>Igualdad de G&eacute;nero</h1>
                 <h3>¿Por qué trabajamos la igualdad de género?</h3>
                 <p>
@@ -185,7 +188,6 @@
             <div></div>
         </section>
         
-
         <section class="maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.829324065484!2d-66.153273!3d-17.401835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bc1dec0e96383fe!2sCentro%20Hermano%20Manolo!5e0!3m2!1sen!2sus!4v1649343456065!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="cil">
@@ -289,22 +291,29 @@
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-ui-preloader"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
 
     <script>
+    Vue.use(loader)
     new Vue({
         el: "#app",
+        components: {
+            loader: loader
+        },
         data() {
             return {
               currentYear: new Date().getFullYear(),
               scTimer: 0,
               scY: 0,
               navigation: "navigation",
-              toggleCls: "toggle"
+              toggleCls: "toggle",
+              loader: true
             }
         },
         mounted () {
             window.addEventListener('scroll', this.handleScroll);
+            const myTimeout = setTimeout(this.stopLoader, 3000);
         },
 
         methods: {
@@ -334,8 +343,11 @@
             onDone(){
                 this.navigation = "navigation";
                 this.toggleCls = "toggle";
+            },
+            stopLoader(){
+                this.loader = false
             }
-        },
+        }
     })
     </script>
 

@@ -11,7 +11,7 @@
 }
 
 .brecha{
-    background-image: linear-gradient(#00000086), url(../images/brecha.jpg);
+    background-image: linear-gradient(#020000cc), url(../images/brecha.jpg);
 }
 .text-eje{
     width: 50%;
@@ -28,14 +28,14 @@
         color: $orange;
     }
     p{
-        color: #fff;
+        color: $orange;
     }
 
     ul{
         padding-left: 1em;
         padding-top: 1em;
         li{
-            color: #fff;
+            color: $orange;
         }
     }
 
@@ -53,9 +53,9 @@
 }
 
 .climatica{
-    background-image: linear-gradient(#00000086), url(../images/clima.jpg);
+    background-image: linear-gradient(#020000cc), url(../images/clima.jpg);
 }
 
 .egenero{
-    background-image: linear-gradient(#00000086), url(../images/egenero.jpg);
+    background-image: linear-gradient(#020000cc), url(../images/egenero.jpg);
 }
