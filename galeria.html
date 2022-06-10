@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEHM - Linea de Tiempo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="preloader"> 
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+  </div>
+  <main id="app" class="azul">
+
+    <div class="nav-menu">
+      <div class="nav-content">
+          <div class="menu">
+              <a href="index.html" class="logo">
+                  <img src="images/nav-logo.svg" alt="">
+              </a>
+              <nav role="navigation" class="primary-navigation">
+                  <ul>
+                      <li>
+                          <a href="index.html">Inicio</a>
+                      </li>
+                      <li>
+                          <a href="#">Nuestro Camino &dtrif;</a>
+                          <ul class="dropdown">
+                              <li><a href="#">Rice/HH.CC</a></li>
+                              <li><a href="#">Equipo</a></li>
+                              <li><a href="#">Voluntarios</a></li>
+                              <li><a href="#">EREBB</a></li>
+                          </ul>
+                      </li>
+                    <li>
+                        <a href="#">Nuestro Sueño &dtrif;</a>
+                          <ul class="dropdown">
+                          <li><a href="index.html#vision">Visi&oacute;n</a></li>
+                          <li><a href="index.html#mision">Misi&oacute;n</a></li>
+                          <li><a href="index.html#valores">Valores</a></li>
+                          <li><a href="index.html#proteccion">Pol&iacute;tica de Protecci&oacute;n</a></li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a href="areas-accion.html">&Aacute;reas de Acci&oacute;n &dtrif;</a>
+                          <ul class="dropdown">
+                              <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
+                              <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
+                              <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
+                              <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
+                          </ul>
+                    </li>
+                    <li>
+                      <a href="#">Ejes &dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
+                            <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
+                            <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galeria Anual&dtrif;</a>
+                        <ul class="dropdown">
+                          <li><a href="#">2009</a></li>
+                          <li><a href="#">2010</a></li>
+                          <li><a href="#">2022</a></li>
+                          <li><a href="#">Cifras</a></li>
+                          <li><a href="#">Galeria</a></li>
+                          <li><a href="#">Boletines</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+              </nav>
+          </div>
+          
+          <a href="#" class="contact">
+              <img src="images/flagbol.svg" alt="flag bolivia">
+              &Uacute;nete
+          </a>
+      </div>
+      <div :class="toggleCls" @click="toggle"></div>
+      <ul :class="navigation">
+          <li>
+              <a class="nav-lnk" href="index.html#home">Inicio</a>
+          </li>
+          <li>
+              <a class="nav-lnk" href="#">Nuestro Camino</a>
+          </li>
+          <li class="submenu">
+              <label for="cbox"><span>Nuestro Sueño</span></label>
+              <input type="checkbox" id="cbox">
+              <ul class="slide">
+                  <li><a href="index.html#vision">Visi&oacute;n</a></li>
+                  <li><a href="index.html#mision" >Misi&oacute;n</a></li>
+                  <li><a href="index.html#valores" >Valores</a></li>
+                  <li><a href="index.html#proteccion" >Pol&iacute;tica de Protecci&oacute;n</a></li>
+              </ul>
+          </li>
+          <li class="submenu">
+              <label for="areas"> <span>&Aacute;reas de Acci&oacute;n</span></label>
+              <input type="checkbox" id="areas">
+              <ul class="slide">
+                  <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
+                  <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
+                  <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
+                  <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
+              </ul>
+          </li>
+          <li class="submenu">
+              <label for="ejes"> <span>Ejes de Acci&oacute;n</span></label>
+              <input type="checkbox" id="ejes">
+              <ul class="slide">
+                  <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
+                  <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
+                  <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
+              </ul>
+          </li>
+          <li>
+              
+              <a class="nav-lnk" href="#">Linea de Tiempo</a>
+          </li>
+      </ul>
+    </div>
+
+    <section class="header-portrait" id="home">
+      <div class="content time">
+          <h1 class="title">Linea de Tiempo</h1>
+      </div>
+    </section>
+
+
+    <section class="timeline">
+      <div class="time-container left">
+        <a href="galeria-anual.html?year=2022" class="date">2022</a>
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M16.23,18L12,15.45L7.77,18L8.89,13.19L5.16,9.96L10.08,9.54L12,5L13.92,9.53L18.84,9.95L15.11,13.18L16.23,18M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+            </svg>
+        </div>
+        <div class="content">
+          <div class="square">
+              <h2>Primera reunión del año con el grupo de nueva generación de Edmundo Rice</h2>
+              <a href="galeria-anual.html?year=2022">
+                  <img class="img-left" src="images/timeline/event1.jpg" alt="">
+              </a>
+              <p>
+                El domingo 20 de febrero, se tuvo la reunión con el grupo de adolescentes, 
+                donde se trató el tema de higiene personal y nutrición, para lo cual se invitó a una enfermera para poder dar la charla.
+                También se habló sobre la importancia de las reglas para el grupo, para su familia y para con la sociedad. 
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="time-container right">
+        <a href="galeria-anual.html?year=2021" class="date">2021</a>
+        <i class="icon fa fa-gift"></i>
+        <div class="content">
+            <div class="square square-right">
+                <h2>&Uacute;ltima reuni&oacute;n con Adolescentes</h2>
+                <div>
+                    <img class="img-right" src="images/timeline/event2.jpg" alt="">
+                </div>
+                <p>
+                    Se ha dado por finalizado las actividades del 2021 con los adolescentes. 
+                    En esta oportunidad nos han acompañado los Hnos. Miguel Braulio y Jorge Tavera, quienes han motivado 
+                    a los jóvenes para continuar por los pasos de Edmundo Rice...
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="time-container left">
+        <div class="date">2020</div>
+        <i class="icon fa fa-user"></i>
+        <div class="content">
+            <div class="square">
+                <h2>Entrega de material educativo para los NNATs</h2>
+                <div>
+                    <img class="img-left" src="images/timeline/event3.jpg" alt="">
+                </div>
+                <p>
+                    A raíz de la clausura del año escolar, el Centro Hermano Manolo como parte su compromiso con la población
+                     de la niñez y adolescencia trabajador decidió elaborar material educativo para todos los niños, niñas y 
+                     adolescentes que son parte del proyecto.
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="time-container right">
+        <div class="date">2019</div>
+        <i class="icon fa fa-running"></i>
+        <div class="content">
+            <div class="square square-right">
+                <h2>Graduaci&oacute;n de Curso de Liderazgo</h2>
+                <div>
+                    <img class="img-right" src="images/timeline/event4.jpg" alt="">
+                </div>
+                <p>
+                    Tres jóvenes que participan desde varios años en el CeHM, como parte del 
+                    desarrollo personal se han graduado en el “Curso de Liderazgo Cristóforo”. 
+                    Fomentando comprender y componer una visión comunitaria de los principios del Liderazgo.
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="time-container left">
+        <div class="date">2017</div>
+        <i class="icon fa fa-cog"></i>
+        <div class="content">
+            <div class="square">
+                <h2>D&iacute;a del Estudiante</h2>
+                <div>
+                    <img class="img-left" src="images/timeline/event5.jpg" alt="">
+                </div>
+                <p>
+                    El domingo 10, se celebró el día del estudiante con un paseo al Parque Bicentenario, donde a través 
+                    de juegos por equipos se disfrutó de un momento de recreación. Luego se compartió un almuerzo. Las 
+                    ultimas horas de la tarde, los niños y adolescentes disfrutaron de la piscina.
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="time-container right">
+        <div class="date">2016</div>
+        <i class="icon fa fa-certificate"></i>
+        <div class="content">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>
+            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="pie">
+    </div>
+    <footer>
+      <div class="content">
+          <div class="col">
+              <div class="social">
+                  <a class="social-logo" href="index.html">
+                      <img src="images/logo.svg" alt="logo cehm" width="300">
+                  </a>
+                  <ul>
+                      <li>
+                          <a href="https://www.facebook.com/erlatam/" target="_blank">
+                              <img src="/images/icons/facebook.svg" alt="facebook-icon">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.twitter.com/erlatam" target="_blank">
+                              <img src="/images/icons/twitter.svg" alt="twitter-icon">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.instagram.com/erlatam" target="_blank">
+                              <img src="/images/icons/instagram.svg" alt="instagram-icon">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.youtube.com/channel/UCzmpn_qnLXG6J3F6XjzuGoA/videos" target="_blank">
+                              <img src="/images/icons/youtube.svg" alt="youtube-icon">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.linkedin.com/company/christianbrothers/" target="_blank">
+                              <img src="/images/icons/linkedin.svg" alt="linkedin-icon">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col">
+              <div class="center">
+                  <ul class="links">
+                      <li>
+                          <a href="index.html#about">
+                              Nosotros
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" v-scroll-to="{el: '#home'}">
+                              &Aacute;reas
+                          </a>
+                      </li>
+                      <li>
+                          <a href="index.html#proteccion">
+                              Protecci&oacute;n Infantil
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://cehm.blogspot.com">
+                              Blog
+                          </a>
+                      </li>
+                      <li>
+                          <a href="index.html#edmund" v-scroll-to="{el: '#edmundo'}">
+                              Edmundo Rice
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col horario">
+              <div class="center">
+                  <h3>Horario de Atenci&oacute;n</h3>
+                  <p>Lunes a Viernes</p>
+                  <ul class="hrs">
+                      <li>9:00 am - 12:30 pm</li>
+                      <li>3:00 pm - 06:30 pm</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="dev">Dev&Desing {{currentYear}} &copy;</div>
+    </footer>
+
+    <transition name="fade">
+        <div id="pagetop" class="fixed right-0 bottom-0" v-show="scY > 300" @click="toTop">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+              stroke="#3EE23E"
+              stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </div>
+    </transition>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+
+  <script>
+
+    window.onload = function(){ 
+        document.querySelector(".preloader").style.display = "none"; 
+    }
+
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+              currentYear: new Date().getFullYear(),
+              scTimer: 0,
+              scY: 0,
+              navigation: "navigation",
+              toggleCls: "toggle",
+            }
+        },
+        mounted () {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+
+        methods: {
+            handleScroll() {
+                if (this.scTimer) return;
+                this.scTimer = setTimeout(() => {
+                this.scY = window.scrollY;
+                clearTimeout(this.scTimer);
+                this.scTimer = 0;
+                }, 100);
+            },
+            toTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            },
+            toggle(){
+                if(this.navigation==='navigation'){
+                this.navigation = "navigation active";
+                this.toggleCls = "toggle active";
+                }else{
+                this.navigation = "navigation";
+                this.toggleCls = "toggle";
+                }
+            },
+            onDone(){
+                this.navigation = "navigation";
+                this.toggleCls = "toggle";
+            }
+        }
+    })
+    </script>
+
+</body>
+</html>
