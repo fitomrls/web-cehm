@@ -371,6 +371,25 @@
     .egenero{
         background-position-x: 65%;
     }
+
+    /* 4 galeria */
+    .time-container.left{
+        left: -118px;
+    }
+
+    .square .img-square{
+        max-width: 150px;
+    }
+    .time-container .content h2{
+        font-size: 1em;
+    }
+
+    .border-left {
+        border-radius: 500px 0px 0px 500px;
+        flex-direction: row-reverse;
+    }
+
+
 }
 
 @media (max-width: 950px) {
