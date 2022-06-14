@@ -130,7 +130,15 @@
       </div>
     </section>
 
-    <section>
+    <section class="fotos">
+        <div class="years">
+            <ul>
+                <li v-for="anio in years" :key="anio">
+                    <a v-if="year==anio" class="active" href="#" @click="filtrar(anio)">{{anio}}</a>
+                    <a v-else href="#" @click="filtrar(anio)">{{anio}}</a>
+                </li>                
+            </ul>
+        </div>
         <viewer :images="pictures" class="gallery">
             <img 
                 v-for="picture in pictures"
@@ -374,7 +382,8 @@
               toggleCls: "toggle",
               year: "",
               pictures: pictures,
-              picturesCopy: []
+              picturesCopy: [],
+              years: [2022,2021]
             }
         },
         mounted () {
@@ -415,6 +424,10 @@
             onDone(){
                 this.navigation = "navigation";
                 this.toggleCls = "toggle";
+            },
+            filtrar(value){
+                this.pictures = this.picturesCopy;
+                this.pictures = this.pictures.filter(element=>element.year==Number(value));         
             }
         }
     })
