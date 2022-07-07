@@ -13,118 +13,7 @@
         <div class="lds-facebook"><div></div><div></div><div></div></div>
     </div>
     <main id="app">
-        <div class="nav-menu">
-            <div class="nav-content">
-                <div class="menu">
-                    <a href="#" class="logo">
-                        <img src="images/nav-logo.svg" alt="">
-                    </a>
-                    <nav role="navigation" class="primary-navigation">
-                        <ul>
-                            <li>
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#">Nuestro Camino &dtrif;</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Rice/HH.CC</a></li>
-                                    <li><a href="#">Equipo</a></li>
-                                    <li><a href="#">Voluntarios</a></li>
-                                    <li><a href="#">EREBB</a></li>
-                                </ul>
-                            </li>
-                          <li>
-                              <a href="#">Nuestro Sueño &dtrif;</a>
-                                <ul class="dropdown">
-                                <li><a href="#" v-scroll-to="{el: '#mision'}">Visi&oacute;n</a></li>
-                                <li><a href="#" v-scroll-to="{el: '#vision'}">Misi&oacute;n</a></li>
-                                <li><a href="#" v-scroll-to="{el: '#valores'}">Valores</a></li>
-                                <li><a href="#" v-scroll-to="{el: '#proteccion'}">Pol&iacute;tica de Protecci&oacute;n</a></li>
-                                </ul>
-                          </li>
-                          <li>
-                              <a href="areas-accion.html">&Aacute;reas de Acci&oacute;n &dtrif;</a>
-                                <ul class="dropdown">
-                                <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
-                                <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
-                                <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
-                                <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
-                                </ul>
-                          </li>
-                          <li>
-                              <a href="#">Ejes &dtrif;</a>
-                                <ul class="dropdown">
-                                    <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
-                                    <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
-                                    <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
-                                </ul>
-                          </li>
-                          <li>
-                              <a href="galeria.html">Galeria Anual&dtrif;</a>
-                              <ul class="dropdown">
-                                <li><a href="#">2009</a></li>
-                                <li><a href="#">2010</a></li>
-                                <li><a href="#">2022</a></li>
-                                <li><a href="#">Cifras</a></li>
-                                <li><a href="#">Galeria</a></li>
-                                <li><a href="#">Boletines</a></li>
-                              </ul>
-                          </li>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <a href="#" class="contact">
-                    <img src="images/flagbol.svg" alt="flag bolivia">
-                    &Uacute;nete
-                </a>
-            </div>
-            <div :class="toggleCls" @click="toggle"></div>
-            <ul :class="navigation">
-                <li>
-                    <a class="nav-lnk" href="#home">Inicio</a>
-                </li>
-                <li>
-                    <a class="nav-lnk" href="#">Nuestro Camino</a>
-                </li>
-                <li class="submenu">
-                    <label for="cbox"><span>Nuestro Sueño</span></label>
-                    <input type="checkbox" id="cbox">
-                    <ul class="slide">
-                        <li><a href="#" 
-                                v-scroll-to="{
-                                    el: '#mision',
-                                    onDone: onDone
-                                }">Visi&oacute;n</a></li>
-                        <li><a href="#" v-scroll-to="{el: '#vision', onDone: onDone}">Misi&oacute;n</a></li>
-                        <li><a href="#" v-scroll-to="{el: '#valores', onDone: onDone}">Valores</a></li>
-                        <li><a href="#" v-scroll-to="{el: '#proteccion', onDone: onDone}">Pol&iacute;tica de Protecci&oacute;n</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <label for="areas"> <span>&Aacute;reas de Acci&oacute;n</span></label>
-                    <input type="checkbox" id="areas">
-                    <ul class="slide">
-                        <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
-                        <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
-                        <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
-                        <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <label for="ejes"> <span>Ejes de Acci&oacute;n</span></label>
-                    <input type="checkbox" id="ejes">
-                    <ul class="slide">
-                        <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
-                        <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
-                        <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="nav-lnk" href="galeria.html">Linea de Tiempo</a>
-                </li>
-            </ul>
-        </div>
+        <nav-menu></nav-menu>
         <header id="home">
             <div class="rec-ver gradient3"></div>
             <div class="sun"></div>
@@ -134,7 +23,7 @@
                     <p>
                         Construyendo sueños desde 2009
                     </p>
-                    <a class="cta" href="#"  v-scroll-to="{el: '#info'}">
+                    <a class="cta" href="voluntariado.html">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M12,12A1.5,1.5 0 0,1 13.5,13.5A1.5,1.5 0 0,1 12,15A1.5,1.5 0 0,1 10.5,13.5A1.5,1.5 0 0,1 12,12M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,16C12.72,16 13.4,16.15 14.04,16.5C14.68,16.8 15,17.2 15,17.67V19.41C16.34,18.81 17,18.08 17,17.2V12.8C17,12 16.5,11.35 15.45,10.8C14.4,10.26 13.25,10 12,10C10.75,10 9.6,10.26 8.55,10.8C7.5,11.35 7,12 7,12.8V17.2C7,18 7.53,18.69 8.63,19.22C9.72,19.75 10.84,20 12,20L13,19.92V17.91L12,18C11,18 10,17.8 9.05,17.39C9.17,17 9.53,16.69 10.13,16.41C10.72,16.13 11.34,16 12,16M12,4A2.5,2.5 0 0,0 9.5,6.5A2.5,2.5 0 0,0 12,9A2.5,2.5 0 0,0 14.5,6.5A2.5,2.5 0 0,0 12,4Z" />
                         </svg>
@@ -210,6 +99,27 @@
                             <li>Liberaci&oacute;n</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="historia" id="historia">
+            <div class="content">
+                <div class="text">
+                    <h1>Nuestra Historia</h1>
+                    <p>
+                        Es un camino largo que comenzó en Irlanda, Europa. Un empresario exitoso Edmundo Rice al quedarse viudo se hizo hermano religioso formando 
+                        la Congregación Religiosa Católica de los Hermanos Cristianos, y dedicó su fortuna a la educación de la juventud. Edmundo no sólo construyó
+                        una escuela, sino también una panadería para que los niños puedan alimentarse y construyó una sastrería para que se puedan vestir adecuadamente 
+                        al presentarse para un empleo. Su sistema de educación se encuentra en 20 países con más de 170,000 alumnos. Edmundo es reconocido a nivel 
+                        global y como “Beato” en la Iglesia Católica. 
+                        En Bolivia nos llamó la atención la situación de tantas niñas, niños y adolescentes en situación de calle quienes se encuentran en alto riesgo. 
+                        A la luz de esta realidad se inició un proyecto de prevención para la población de niñez y adolescencia en el sector del mercado La Cancha, 
+                        Cochabamba en 2009. La institución lleva por nombre el apodo del último Hermano Cristiano que falleció en aquel tiempo – Centro Hermano Manolo. 
+                    </p>
+                </div>
+                <div class="media flex-center">
+                    <img src="images/bol11.png" alt="">
                 </div>
             </div>
         </section>
@@ -312,96 +222,9 @@
             </div>
         </div>
 
-        <section class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.829324065484!2d-66.153273!3d-17.401835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bc1dec0e96383fe!2sCentro%20Hermano%20Manolo!5e0!3m2!1sen!2sus!4v1649343456065!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="cil">
-                <h2>Gracias al apoyo de:</h2>
-                <a class="lnk" href="https://www.achanceinlife.org/" target="_blank">
-                    <img src="images/acil-logo.png" alt="">
-                </a>
-            </div>
-        </section>
+        <ubicacion></ubicacion>
 
-        <footer>
-            <div class="content">
-                <div class="col">
-                    <div class="social">
-                        <a class="social-logo" href="#" v-scroll-to="{el: '#home'}">
-                            <img src="images/logo.svg" alt="logo cehm" width="300">
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/erlatam/" target="_blank">
-                                    <img src="/images/icons/facebook.svg" alt="facebook-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.twitter.com/erlatam" target="_blank">
-                                    <img src="/images/icons/twitter.svg" alt="twitter-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/erlatam" target="_blank">
-                                    <img src="/images/icons/instagram.svg" alt="instagram-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCzmpn_qnLXG6J3F6XjzuGoA/videos" target="_blank">
-                                    <img src="/images/icons/youtube.svg" alt="youtube-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/christianbrothers/" target="_blank">
-                                    <img src="/images/icons/linkedin.svg" alt="linkedin-icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="center">
-                        <ul class="links">
-                            <li>
-                                <a href="#" v-scroll-to="{el: '#about'}">
-                                    Nosotros
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" v-scroll-to="{el: '#areas'}">
-                                    &Aacute;reas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" v-scroll-to="{el: '#proteccion'}">
-                                    Protecci&oacute;n Infantil
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://cehm.blogspot.com">
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" v-scroll-to="{el: '#edmundo'}">
-                                    Edmundo Rice
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col horario">
-                    <div class="center">
-                        <h3>Horario de Atenci&oacute;n</h3>
-                        <p>Lunes a Viernes</p>
-                        <ul class="hrs">
-                            <li>9:00 am - 12:30 pm</li>
-                            <li>3:00 pm - 06:30 pm</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="dev">Dev&Desing {{currentYear}} &copy;</div>
-        </footer>
+        <my-footer></my-footer>
 
         <transition name="fade">
             <div id="pagetop" class="fixed right-0 bottom-0" v-show="scY > 300" @click="toTop">
@@ -414,9 +237,12 @@
         </transition>
 
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+    <script src="components/NavMenu.js"></script>
+    <script src="components/Ubicacion.js"></script>
+    <script src="components/Footer.js"></script>
 
     <script>
 
@@ -442,11 +268,8 @@
     new Vue({
         el: "#app",
         data:{
-            currentYear: new Date().getFullYear(),
             scTimer: 0,
             scY: 0,
-            navigation: "navigation",
-            toggleCls: "toggle",
             carouselName: 'carousel-next',
             carousels: carousels,
             len: 0,
@@ -473,19 +296,6 @@
                     top: 0,
                     behavior: "smooth"
                 });
-            },
-            toggle(){
-                if(this.navigation==='navigation'){
-                this.navigation = "navigation active";
-                this.toggleCls = "toggle active";
-                }else{
-                this.navigation = "navigation";
-                this.toggleCls = "toggle";
-                }
-            },
-            onDone(){
-                this.navigation = "navigation";
-                this.toggleCls = "toggle";
             },
             toNext() {
                 this.carouselName = 'carousel-next';

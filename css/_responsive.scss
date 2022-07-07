@@ -253,13 +253,31 @@
                 }
             }
             
+            #way{
+                opacity: 0;
+                height: 0px;
+                position: absolute; 
+            }
+            #way:checked + .slide{
+                height: 135px;
+            }
+
+            #gal{
+                opacity: 0;
+                height: 0px;
+                position: absolute; 
+            }
+            #gal:checked + .slide{
+                height: 135px;
+            }
+
             #cbox{
                 opacity: 0;
                 height: 0px;
                 position: absolute; 
             }
             #cbox:checked + .slide{
-                height: 100px;
+                height: 135px;
             }
 
             #areas{
@@ -268,7 +286,7 @@
                 position: absolute; 
             }
             #areas:checked + .slide{
-                height: 100px;
+                height: 135px;
             }
 
             #ejes{
@@ -277,7 +295,7 @@
                 position: absolute; 
             }
             #ejes:checked + .slide{
-                height: 100px;
+                height: 135px;
             }
         }   
     }
@@ -374,6 +392,25 @@
 
     .gallery{
         padding: 10em 0em;
+    }
+
+    /* volunteer */
+    .volunteer .content .images img{
+        max-width: 22em;
+    }
+
+    .historia .content{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .viewer-footer{
+        bottom: 19rem;
+    }
+
+    .viewer-title {
+        color: #F8AD1D; 
+        font-size: 1rem;
     }
 
 

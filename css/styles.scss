@@ -2,6 +2,7 @@
 @import "general";
 @import "nav_menu";
 @import "header";
+@import "historia";
 @import "about";
 @import "areas";
 @import "proteccion";
@@ -17,6 +18,7 @@
 @import "animations";
 @import "timeline";
 @import "galeria";
+@import "voluntarios";
 @import "responsive";
 
 .bg {
@@ -48,6 +50,12 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 900px;
+  }
+
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .carousel-wrap {

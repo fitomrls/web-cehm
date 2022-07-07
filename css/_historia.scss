@@ -1,0 +1,38 @@
+.historia{
+    .content{
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 10em;
+        padding-left: 5em;
+        padding-right: 5em;
+
+        .media{
+            flex: 35%;
+            /* background-image: url(../images/border_icon_1.svg); */
+            background-image: url(../images/bg_hover_icon_1.svg);
+            background-repeat: no-repeat;
+
+            /* :hover{
+                background-image: url(../images/bg_hover_icon_1.svg);
+                background-repeat: no-repeat;
+            } */
+        }
+
+        .text{
+            flex: 50%;
+            h1{
+                padding-bottom: 1em;
+                font-size: 2.5em;
+                color: $black;
+                text-shadow: #dbdada 1px 1px 0px;
+                text-transform: uppercase;
+            }
+            p{
+                width: 90%;
+            }
+        }
+    }
+
+}

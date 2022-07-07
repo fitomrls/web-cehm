@@ -13,114 +13,8 @@
     </div>
 
     <main id="app">
-        <div class="nav-menu">
-            <div class="nav-content">
-                <div class="menu">
-                    <a href="index.html" class="logo">
-                        <img src="images/nav-logo.svg" alt="">
-                    </a>
-                    <nav role="navigation" class="primary-navigation">
-                        <ul>
-                            <li>
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#">Nuestro Camino &dtrif;</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Rice/HH.CC</a></li>
-                                    <li><a href="#">Equipo</a></li>
-                                    <li><a href="#">Voluntarios</a></li>
-                                    <li><a href="#">EREBB</a></li>
-                                </ul>
-                            </li>
-                          <li>
-                              <a href="#">Nuestro Sueño &dtrif;</a>
-                                <ul class="dropdown">
-                                <li><a href="index.html#vision">Visi&oacute;n</a></li>
-                                <li><a href="index.html#mision">Misi&oacute;n</a></li>
-                                <li><a href="index.html#valores">Valores</a></li>
-                                <li><a href="index.html#proteccion">Pol&iacute;tica de Protecci&oacute;n</a></li>
-                                </ul>
-                          </li>
-                          <li>
-                              <a href="areas-accion.html">&Aacute;reas de Acci&oacute;n &dtrif;</a>
-                                <ul class="dropdown">
-                                    <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
-                                    <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
-                                    <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
-                                    <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
-                                </ul>
-                          </li>
-                          <li>
-                            <a href="#">Ejes &dtrif;</a>
-                              <ul class="dropdown">
-                                  <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
-                                  <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
-                                  <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
-                              </ul>
-                          </li>
-                          <li>
-                              <a href="galeria.html">Galeria Anual&dtrif;</a>
-                              <ul class="dropdown">
-                                <li><a href="#">2009</a></li>
-                                <li><a href="#">2010</a></li>
-                                <li><a href="#">2022</a></li>
-                                <li><a href="#">Cifras</a></li>
-                                <li><a href="#">Galeria</a></li>
-                                <li><a href="#">Boletines</a></li>
-                              </ul>
-                          </li>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <a href="#" class="contact">
-                    <img src="images/flagbol.svg" alt="flag bolivia">
-                    &Uacute;nete
-                </a>
-            </div>
-            <div :class="toggleCls" @click="toggle"></div>
-            <ul :class="navigation">
-                <li>
-                    <a class="nav-lnk" href="index.html#home">Inicio</a>
-                </li>
-                <li>
-                    <a class="nav-lnk" href="#">Nuestro Camino</a>
-                </li>
-                <li class="submenu">
-                    <label for="cbox"><span>Nuestro Sueño</span></label>
-                    <input type="checkbox" id="cbox">
-                    <ul class="slide">
-                        <li><a href="index.html#vision">Visi&oacute;n</a></li>
-                        <li><a href="index.html#mision" >Misi&oacute;n</a></li>
-                        <li><a href="index.html#valores" >Valores</a></li>
-                        <li><a href="index.html#proteccion" >Pol&iacute;tica de Protecci&oacute;n</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <label for="areas"> <span>&Aacute;reas de Acci&oacute;n</span></label>
-                    <input type="checkbox" id="areas">
-                    <ul class="slide">
-                        <li><a href="areas-accion.html#personal">Desarrollo Personal</a></li>
-                        <li><a href="areas-accion.html#familiar">Acompañamiento Familiar</a></li>
-                        <li><a href="areas-accion.html#educativo">Acompañamiento Educativo</a></li>
-                        <li><a href="areas-accion.html#tecnica">Promoci&oacute;n y Capaticaci&oacute;n T&eacute;cnica</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <label for="ejes"> <span>Ejes de Acci&oacute;n</span></label>
-                    <input type="checkbox" id="ejes">
-                    <ul class="slide">
-                        <li><a href="ejes-accion.html#egenero">Equidad de G&eacute;nero</a></li>
-                        <li><a href="ejes-accion.html#aclima">Acci&oacute;n por el Clima</a></li>
-                        <li><a href="ejes-accion.html#bdigital">Brecha Digital</a></li>
-                    </ul>
-                </li>
-                <li>                    
-                    <a class="nav-lnk" href="galeria.html">Linea de Tiempo</a>
-                </li>
-            </ul>
-        </div>
+        <nav-menu></nav-menu>
+
         <section class="header-portrait" id="home">
             <div class="content ejes">
                 <h1 class="title">Ejes de Acci&oacute;n</h1>
@@ -178,96 +72,9 @@
             <div></div>
         </section>
         
-        <section class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.829324065484!2d-66.153273!3d-17.401835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bc1dec0e96383fe!2sCentro%20Hermano%20Manolo!5e0!3m2!1sen!2sus!4v1649343456065!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="cil">
-                <h2>Gracias al apoyo de:</h2>
-                <a class="lnk" href="https://www.achanceinlife.org/" target="_blank">
-                    <img src="images/acil-logo.png" alt="">
-                </a>
-            </div>
-        </section>
+        <ubicacion></ubicacion>
 
-        <footer>
-            <div class="content">
-                <div class="col">
-                    <div class="social">
-                        <a class="social-logo" href="index.html">
-                            <img src="images/logo.svg" alt="logo cehm" width="300">
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/erlatam/" target="_blank">
-                                    <img src="/images/icons/facebook.svg" alt="facebook-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.twitter.com/erlatam" target="_blank">
-                                    <img src="/images/icons/twitter.svg" alt="twitter-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/erlatam" target="_blank">
-                                    <img src="/images/icons/instagram.svg" alt="instagram-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCzmpn_qnLXG6J3F6XjzuGoA/videos" target="_blank">
-                                    <img src="/images/icons/youtube.svg" alt="youtube-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/christianbrothers/" target="_blank">
-                                    <img src="/images/icons/linkedin.svg" alt="linkedin-icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="center">
-                        <ul class="links">
-                            <li>
-                                <a href="index.html#about">
-                                    Nosotros
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" v-scroll-to="{el: '#home'}">
-                                    &Aacute;reas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#proteccion">
-                                    Protecci&oacute;n Infantil
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://cehm.blogspot.com">
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#edmund" v-scroll-to="{el: '#edmundo'}">
-                                    Edmundo Rice
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col horario">
-                    <div class="center">
-                        <h3>Horario de Atenci&oacute;n</h3>
-                        <p>Lunes a Viernes</p>
-                        <ul class="hrs">
-                            <li>9:00 am - 12:30 pm</li>
-                            <li>3:00 pm - 06:30 pm</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="dev">Dev&Desing {{currentYear}} &copy;</div>
-        </footer>
+        <my-footer></my-footer>
 
         <transition name="fade">
             <div id="pagetop" class="fixed right-0 bottom-0" v-show="scY > 300" @click="toTop">
@@ -282,6 +89,9 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+    <script src="components/NavMenu.js"></script>
+    <script src="components/Ubicacion.js"></script>
+    <script src="components/Footer.js"></script>
 
     <script>
     
@@ -295,9 +105,7 @@
             return {
               currentYear: new Date().getFullYear(),
               scTimer: 0,
-              scY: 0,
-              navigation: "navigation",
-              toggleCls: "toggle"
+              scY: 0
             }
         },
         mounted () {
@@ -318,19 +126,6 @@
                     top: 0,
                     behavior: "smooth"
                 });
-            },
-            toggle(){
-                if(this.navigation==='navigation'){
-                this.navigation = "navigation active";
-                this.toggleCls = "toggle active";
-                }else{
-                this.navigation = "navigation";
-                this.toggleCls = "toggle";
-                }
-            },
-            onDone(){
-                this.navigation = "navigation";
-                this.toggleCls = "toggle";
             }
         }
     })

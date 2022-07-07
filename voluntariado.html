@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEHM - Voluntarios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="preloader"> 
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+  </div>
+  <main id="app">
+
+    <nav-menu></nav-menu>
+
+    <section class="header-portrait" id="home">
+      <div class="content volun">
+          <h1 class="title">Voluntariado</h1>
+      </div>
+    </section>
+
+
+    <section class="volunteer" >
+      <div class="content">
+          <div class="flex-center images">
+               <img src="images/vol2.jpg" alt="">
+               <a href="#" class="btn" >Quiero ser Voluntario</a>
+          </div>
+          <div class="text">
+              <h3 class="title">¿Qué significa ser voluntario?</h3>
+              <p>
+                Es una forma de ser, de estar y de vivir en el mundo, es dar a los demás una pequeña parte de tu tiempo. Un voluntario descubre que forma parte de una sociedad y donde las personas son como ella o él, que se encuentran necesitadas de amor y de un bienestar material; también toma conciencia de que no sólo se preocupa de sus necesidades, sino que también se interesa de las necesidades de los otros y se hace responsable de las soluciones, su manera de vivir no es indiferente.
+                ¿Qué implica ser voluntario?
+                Un voluntario/a es la persona que: por elección propia ofrece libremente su tiempo, sus conocimientos, su experiencia, es una entrega voluntaria. Sin recibir remuneración económica a cambio de la acción solidaria que está realizando, con el fin de crear un mundo mejor. Un voluntario implica trabajar en equipo de forma organizada, sistemática y sinérgica.
+              
+                <h3>Características de un voluntario</h3>
+                Voluntariedad, solidaridad, altruista, promueve la justicia, respeta la dignidad, actúa con compasión, protagonista de un cambio social, calidad humana, etc. 
+                Y a ti… ¿en qué te aportaría el ser voluntario?
+                Recibe mucho más de lo que das, aprendes, entablas nuevas relaciones más humanas, te enriqueces como persona al crecer en valores. Desarrollas tu sensibilidad social, comprendes mejor la realidad, refuerzas o creas un lazo con la sociedad. 
+              
+                <h3>Requisitos para ser voluntario</h3>
+                Contar con el idioma español, el tiempo de voluntariado debe ser no menor de 6 meses. Y cumplir con la Política de Protección. 
+              </p>
+          </div>
+      </div>
+    </section>
+    
+    <ubicacion></ubicacion>
+
+    <my-footer></my-footer>
+
+    <transition name="fade">
+        <div id="pagetop" class="fixed right-0 bottom-0" v-show="scY > 300" @click="toTop">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+              stroke="#3EE23E"
+              stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </div>
+    </transition>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+  <script src="components/NavMenu.js"></script>
+  <script src="components/Ubicacion.js"></script>
+  <script src="components/Footer.js"></script>
+
+  <script>
+
+    window.onload = function(){ 
+        document.querySelector(".preloader").style.display = "none"; 
+    }
+
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+              currentYear: new Date().getFullYear(),
+              scTimer: 0,
+              scY: 0
+            }
+        },
+        mounted () {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+
+        methods: {
+            handleScroll() {
+                if (this.scTimer) return;
+                this.scTimer = setTimeout(() => {
+                this.scY = window.scrollY;
+                clearTimeout(this.scTimer);
+                this.scTimer = 0;
+                }, 100);
+            },
+            toTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+        }
+    })
+    </script>
+
+</body>
+</html>

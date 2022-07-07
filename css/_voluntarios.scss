@@ -1,0 +1,46 @@
+.volunteer{
+    .content{
+        padding: 5em 1em;
+        /* background-color: greenyellow; */
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .images{
+            position: relative;
+            flex: 50%;
+            /* background-color: blueviolet; */
+            img{
+                max-width: 30em;
+                border-radius: 50%;
+            }
+            a.btn{
+                position: absolute;
+                right: 5%;
+                bottom: 5%;
+                background-color: $orange;
+                border: solid 2px #fff;
+                border-radius: 15px;
+                padding: .6em 1em;
+                color: #fff;
+            }
+        }
+
+        .text{
+            /* background-color: cyan; */
+            flex: 50%;
+            h3{
+                color: $black;
+                padding-top: 1em;
+                padding-bottom: .8em;
+            }            
+            p{
+                padding-right: 3em;
+                color: $black;
+            }
+                
+        }
+    }
+}
