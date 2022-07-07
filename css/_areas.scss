@@ -1,17 +1,18 @@
 .areas{
     z-index: 3;
-    height: 120vh;
+    /* height: 120vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8em;
+    margin-top: 3em;
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
     .content{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        padding-top: 4em;
+        padding-bottom: 8em;        
         /* flex-wrap: wrap; */
 
         .text-area{
