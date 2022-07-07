@@ -135,7 +135,7 @@
     }
 
     .areas .content .boxes-area{
-        width: 100%;
+        width: 300px;
     }
 
     .proteccion{
@@ -404,15 +404,26 @@
         padding-right: 1.5em;
     }
 
-    .viewer-footer{
+/*     .viewer-footer{
         bottom: 19rem;
-    }
+    } */
 
     .viewer-title {
         color: #F8AD1D; 
         font-size: 1rem;
     }
 
+    .historia .content .media{
+        flex: unset;
+        margin-top: 3em;
+        img{
+            max-width: 300px;
+        }
+    }
+
+    .areas .content .text-area .col h1{
+        font-size: 2em;
+    }
 
 }
 
