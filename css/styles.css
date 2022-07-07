@@ -2296,7 +2296,7 @@ footer .dev {
     margin-top: 2em;
   }
   .about .row .col-img img.cbba {
-    max-width: 350px;
+    max-width: 300px;
     padding-top: 1em;
   }
   .about .row p.frase {
@@ -2536,7 +2536,8 @@ footer .dev {
     font-size: 2em;
   }
   .about .row .col-img .edu {
-    left: 3%;
+    left: 12%;
+    bottom: 5%;
   }
   .afamiliar .content {
     -webkit-box-orient: vertical;
